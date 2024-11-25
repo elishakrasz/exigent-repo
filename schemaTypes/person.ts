@@ -52,6 +52,60 @@ export default defineType({
         hotspot: true,
       },
     }),
+    defineField({
+      name: 'content',
+      title: 'Content',
+      type: 'array',
+      of: [
+        {
+          type: 'block', // Regular text blocks
+        },
+        {
+          type: 'image', // Inline images
+          options: {
+            hotspot: true,
+          },
+        },
+        {
+          type: 'object', // Custom block for an image gallery
+          name: 'imageGallery',
+          title: 'Image Gallery',
+          fields: [
+            {
+              name: 'images',
+              title: 'Images',
+              type: 'array',
+              of: [
+                {
+                  type: 'image',
+                  options: {
+                    hotspot: true,
+                  },
+                },
+              ],
+            },
+            {
+              name: 'caption',
+              title: 'Caption',
+              type: 'string',
+              description: 'Optional caption for the image gallery',
+            },
+          ],
+          preview: {
+            select: {
+              title: 'caption',
+              media: 'images.0', // Use the first image as the preview thumbnail
+            },
+            prepare({ title, media }) {
+              return {
+                title: title || 'Image Gallery',
+                media,
+              };
+            },
+          },
+        },
+      ],
+    }),
   ],
   preview: {
     select: {title: 'name', media: 'image'},

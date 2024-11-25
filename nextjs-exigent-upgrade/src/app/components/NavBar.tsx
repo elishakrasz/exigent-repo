@@ -2,7 +2,6 @@
 
 import '../globals.css';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import closeIcon from '../../../public/close-white.svg';
 import exigentBase from '../../../public/exigent_base.jpg';
@@ -36,21 +35,21 @@ const NavBar = () => {
     <div className="sticky top-0 z-50 w-full max-w-6xl flex items-center justify-between lg:justify-between py-6 mx-auto px-10">
 
       <div>
-        <Link href="/" className="w-28">
+        <a href="/" className="w-28">
           <Image src={exigentBase} alt="Logo" className="max-h-12" />
-        </Link>
+        </a>
       </div>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex md:flex-row md:items-center space-x-6 text-base text-gray-500">
-        <Link href="/about" className="group pb-1 border-b-3 border-transparent">
+        <a href="/about" className="group pb-1 border-b-3 border-transparent">
           About
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </Link>
-        <Link href="/team" className="group pb-1 border-b-3 border-transparent">
+        </a>
+        <a href="/team" className="group pb-1 border-b-3 border-transparent">
           Team
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </Link>
+        </a>
         <div
           className="group relative pb-1 border-b-3 border-transparent cursor-pointer mb-1"
           onMouseEnter={() => setDropdownVisible(true)}
@@ -63,22 +62,22 @@ const NavBar = () => {
               onMouseEnter={() => setDropdownVisible(true)} // Keep visible when hovering over the dropdown
               onMouseLeave={() => setDropdownVisible(false)} // Close when leaving the dropdown
             >
-              <Link href="/family" onClick={closeDropdown} className="block py-[2px] hover:text-red-700">
+              <a href="/family" onClick={closeDropdown} className="block py-[2px] hover:text-red-700">
                 Family Office
-              </Link>
-              <Link href="/special" onClick={closeDropdown} className="block py-[2px]  hover:text-red-700">
+              </a>
+              <a href="/special" onClick={closeDropdown} className="block py-[2px]  hover:text-red-700">
                 Investment Products
-              </Link>
-              <Link href="/strategic" onClick={closeDropdown} className="block py-[2px]  hover:text-red-700">
+              </a>
+              <a href="/strategic" onClick={closeDropdown} className="block py-[2px]  hover:text-red-700">
                 Strategic Advisory
-              </Link>
+              </a>
             </div>
           )}
         </div>
-        <Link href="/contact" className="group pb-1 border-b-3 border-transparent">
+        <a href="/contact" className="group pb-1 border-b-3 border-transparent">
           Contact
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </Link>
+        </a>
       </div>
 
       {/* Mobile Menu Icon */}
@@ -104,24 +103,24 @@ const NavBar = () => {
           <Image src={closeIcon} alt="Close Menu" />
         </button>
         <div className="flex flex-col space-y-4 mt-12">
-          <Link href="/about" className="text-white" onClick={() => setOpennavbar(false)}>
+          <a href="/about" className="text-white" onClick={() => setOpennavbar(false)}>
             About
-          </Link>
-          <Link href="/team" className="text-white" onClick={() => setOpennavbar(false)}>
+          </a>
+          <a href="/team" className="text-white" onClick={() => setOpennavbar(false)}>
             Team
-          </Link>
-          <Link href="/family" className="text-white" onClick={() => setOpennavbar(false)}>
+          </a>
+          <a href="/family" className="text-white" onClick={() => setOpennavbar(false)}>
             Family Office
-          </Link>
-          <Link href="/special" className="text-white" onClick={() => setOpennavbar(false)}>
+          </a>
+          <a href="/special" className="text-white" onClick={() => setOpennavbar(false)}>
             Special Situations
-          </Link>
-          <Link href="/strategic" className="text-white" onClick={() => setOpennavbar(false)}>
+          </a>
+          <a href="/strategic" className="text-white" onClick={() => setOpennavbar(false)}>
             Strategic Advisory
-          </Link>
-          <Link href="/contact" className="text-white" onClick={() => setOpennavbar(false)}>
+          </a>
+          <a href="/contact" className="text-white" onClick={() => setOpennavbar(false)}>
             Contact
-          </Link>
+          </a>
         </div>
       </div>
     </div>

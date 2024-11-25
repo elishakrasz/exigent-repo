@@ -42,8 +42,6 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
         ❮
       </button>
   
-
-
       {/* Carousel Track */}
       <div className="overflow-hidden">
         <div
@@ -58,7 +56,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
               className="flex-none w-1/4 px-2"
               style={{ minWidth: "25%" }} // Ensures 4 cards fit exactly
             >
-               <a href={`/${person.slug.current}`} className="" key={index}>
+               <a href={`team/${person.slug.current}`} className="" key={index}>
                 <div className="border border-gray-300  h-[350px]">
                   <div className={bodoni.className}>
                     <img

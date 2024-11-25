@@ -61,7 +61,7 @@
   left: 0;
   right: 0%;
   z-index: 9999999;
-  animation: backgroundanimation 7.5s forwards cubic-bezier(0.5, 0, 0, 1);
+  animation: backgroundanimation 6.0s forwards cubic-bezier(0.5, 0, 0, 1);
 }
 
 
@@ -839,7 +839,7 @@ margin-bottom: 10px;
 
 .head60 {
 font-size: 60px;
-margin: 0 0 10px 10px;
+margin: 0 0 10px 0;
 line-height: 1.2;
 letter-spacing: -0.9px;
 }
@@ -1882,6 +1882,50 @@ min-height: calc(100vh - 120px);
 }
 
 .carousel-wrap {
+  position: relative; /* Ensure the buttons are positioned relative to the carousel container */
+  padding-top: 40px;
+}
+
+.carousel-wrap .carousel__button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  background-color: #fff; /* Optional: Style for buttons */
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10; /* Ensure buttons are above the carousel items */
+}
+
+.carousel-wrap .carousel__button--prev {
+  left: -60px; /* Position the button outside the left edge */
+}
+
+.carousel-wrap .carousel__button--next {
+  right: -60px; /* Position the button outside the right edge */
+}
+
+.carousel-wrap .news-box.box {
+  margin: 0;
+  width: 100%;
+}
+
+.carousel-wrap .owl-dots {
+  margin-top: 30px !important;
+}
+
+.owl-carousel .owl-item img {
+  width: auto !important;
+  max-width: 200px;
+}
+
+
+/* .carousel-wrap {
 padding-top: 40px;
 }
 
@@ -1897,7 +1941,7 @@ margin-top: 30px !important;
 .owl-carousel .owl-item img {
 width: auto !important;
 max-width: 200px;
-}
+} */
 
 @media screen and (max-width: 800px) {
 .nav-wrap {
@@ -2032,9 +2076,9 @@ max-width: 200px;
   margin: 25px 0 0;
 }
 
-.carousel-wrap .news-box.box {
+/* .carousel-wrap .news-box.box {
   width: 99%;
-}
+} */
 
 .footer-logos {
   margin-left: 0;
