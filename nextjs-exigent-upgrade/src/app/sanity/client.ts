@@ -1,6 +1,9 @@
 import { createClient } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url";
 
+interface Image {
+  image: string;
+}
 
 export const client = createClient({
   projectId: "t79x65c2",
@@ -11,6 +14,6 @@ export const client = createClient({
 
 const builder = imageUrlBuilder(client);
 
-export function urlForImage(source: any) {
+export function urlForImage(source: Image) {
   return builder.image(source);
 }

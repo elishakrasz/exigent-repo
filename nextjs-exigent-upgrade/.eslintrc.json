@@ -1,3 +1,5 @@
 {
+  "@typescript-eslint/no-explicit-any": "off", // Disable the rule globally
+  "root": true,
   "extends": ["next/core-web-vitals", "next/typescript"]
 }

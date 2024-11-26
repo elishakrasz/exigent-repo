@@ -1,9 +1,13 @@
+import Link from "next/link";
+import Image from "next/image";
+
 const Contact = () => {
   return (
     <div className="mt-28 text-center mx-auto justify-items-center">
       <h3 className="text-5xl mb-4">Contact</h3>
-      <div className="redline justify-self-center mb-24 h-[3px] w-[120px] bg-red-500 rounded"></div>
+      <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mb-24"></div>
       <div className="grid grid-cols-3 gap-16">
+        {/* Locations */}
         <div className="text-left">
           <div>
             <h1 className="text-lg font-normal font-sans">Jerusalem</h1>
@@ -15,101 +19,101 @@ const Contact = () => {
             <p className="text-base font-light font-sans mb-36">Herzliya, Israel</p>
           </div>
         </div>
+
+        {/* Contact Information */}
         <div className="text-left">
-          <div className="">
+          <div>
             <p className="text-base">Israel 972-2-500-9450</p>
             <p className="mb-8 text-base">US 1-646-506-9450</p>
-
-            <h1 className="text-base text-red-500 font-sans font-light">info@exigentcap.com</h1>
+            <h1 className="text-base text-red-500 font-sans font-light">
+              info@exigentcap.com
+            </h1>
           </div>
         </div>
+
+        {/* Social and Contact Icons */}
         <div className="flex space-x-3">
-          {/* <a href="https://www.linkedin.com/company/exigentcapitalgroup/" target="_blank" className="mr-4">
-                <img src="/assets/LinkedIn-Logo.svg" alt="LinkedIn" className="w-28 transition-opacity duration-300 group-hover:opacity-0" />
-              
-                <img src="/assets/RedLinkdedin.png" alt="LinkedIn" className="w-28 absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100" />
-              </a> */}
-          <a
+          <Link
             href="https://www.linkedin.com/company/exigentcapitalgroup/"
-            target="_blank"
             className="mr-4 group relative"
+            target="_blank"
           >
-            <img
+            <Image
               src="/assets/LinkedIn.png"
               alt="LinkedIn"
-              className="w-28 transition-opacity duration-100 group-hover:opacity-0"
+              width={112}
+              height={28}
+              className="transition-opacity duration-100 group-hover:opacity-0"
             />
-            <img
+            <Image
               src="/assets/RedLinkedIn.png"
               alt="LinkedIn Red"
-              className="w-28 absolute top-0 left-0 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
+              width={112}
+              height={28}
+              className="absolute top-0 left-0 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="mailto:info@exigentcapitalgroup.com"
-            target="_blank"
-            className="mr-4 group relative inline-block w-6 h-6"
+            className="mr-4 group relative"
           >
-            <img
+            <Image
               src="/assets/Email.png"
               alt="Email Icon"
-              className="w-6  transition-opacity duration-100 group-hover:opacity-0"
+              width={24}
+              height={24}
+              className="transition-opacity duration-100 group-hover:opacity-0"
             />
-            <img
+            <Image
               src="/assets/RedMail.png"
               alt="Red Email Icon"
-              className="w-6 absolute top-2 left-0 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
+              width={24}
+              height={24}
+              className="absolute top-0 left-0 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
             />
-          </a>
-
-          <a
-            href="mailto:info@exigentcapitalgroup.com"
-            target="_blank"
-            className="mr-4 group relative inline-block w-6 h-6"
+          </Link>
+          <Link
+            href="tel:info@exigentcapitalgroup.com"
+            className="mr-4 group relative"
           >
-            <img
+            <Image
               src="/assets/Phone Icon.png"
-              alt="Email Icon"
-              className="w-4 transition-opacity duration-100 group-hover:opacity-0"
+              alt="Phone Icon"
+              width={16}
+              height={16}
+              className="transition-opacity duration-100 group-hover:opacity-0"
             />
-            <img
+            <Image
               src="/assets/RedPhone.png"
-              alt="Red Email Icon"
-              className="w-4 absolute top-2 left-1 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
+              alt="Red Phone Icon"
+              width={16}
+              height={16}
+              className="absolute top-0 left-1 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
             />
-          </a>
-
-          {/* <a href="https://www.linkedin.com/company/exigentcapitalgroup/" target="_blank" className="">
-                <img src="/assets/Email.png" alt="LinkedIn" className="w-6" />
-              </a> */}
-
-          {/* <a href="https://www.linkedin.com/company/exigentcapitalgroup/" target="_blank" className="">
-                <img src="/assets/Phone Icon.png" alt="LinkedIn" className="w-4" />
-              </a> */}
-
-          <a
+          </Link>
+          <Link
             href="mailto:info@exigentcapitalgroup.com"
-            target="_blank"
-            className="mr-4 group relative inline-block w-6 h-6"
+            className="mr-4 group relative"
           >
-            <img
+            <Image
               src="/assets/Location Icon.png"
-              alt="Email Icon"
-              className="w-4  transition-opacity duration-100 group-hover:opacity-0"
+              alt="Location Icon"
+              width={16}
+              height={16}
+              className="transition-opacity duration-100 group-hover:opacity-0"
             />
-            <img
+            <Image
               src="/assets/RedLocation.png"
-              alt="Red Email Icon"
-              className="w-4 absolute top-1 left-1 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
+              alt="Red Location Icon"
+              width={16}
+              height={16}
+              className="absolute top-0 left-1 transition-opacity duration-100 opacity-0 group-hover:opacity-100"
             />
-          </a>
-          {/* <a href="https://www.linkedin.com/company/exigentcapitalgroup/" target="_blank" className="">
-                <img src="/assets/Location Icon.png" alt="LinkedIn" className="w-4" />
-              </a> */}
+          </Link>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

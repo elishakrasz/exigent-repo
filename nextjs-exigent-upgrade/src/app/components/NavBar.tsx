@@ -3,6 +3,7 @@
 import '../globals.css';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import closeIcon from '../../../public/close-white.svg';
 import exigentBase from '../../../public/exigent_base.jpg';
 import menuIcon from '../../../public/menu.svg';
@@ -33,57 +34,69 @@ const NavBar = () => {
 
   return (
     <div className="sticky top-0 z-50 w-full max-w-6xl flex items-center justify-between lg:justify-between py-6 mx-auto px-10">
-
+      {/* Logo */}
       <div>
-        <a href="/" className="w-28">
+        <Link href="/" className="w-28">
           <Image src={exigentBase} alt="Logo" className="max-h-12" />
-        </a>
+        </Link>
       </div>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex md:flex-row md:items-center space-x-6 text-base text-gray-500">
-        <a href="/about" className="group pb-1 border-b-3 border-transparent">
+        <Link href="/about" className="group pb-1 border-b-3 border-transparent">
           About
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </a>
-        <a href="/team" className="group pb-1 border-b-3 border-transparent">
+        </Link>
+        <Link href="/team" className="group pb-1 border-b-3 border-transparent">
           Team
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </a>
+        </Link>
         <div
           className="group relative pb-1 border-b-3 border-transparent cursor-pointer mb-1"
           onMouseEnter={() => setDropdownVisible(true)}
           onMouseLeave={() => setDropdownVisible(false)}
         >
-          <span className="">Services</span>
+          <span>Services</span>
           {dropdownVisible && (
             <div
               className="absolute left-0 top-full w-56 opacity-100 transition-opacity duration-300"
-              onMouseEnter={() => setDropdownVisible(true)} // Keep visible when hovering over the dropdown
-              onMouseLeave={() => setDropdownVisible(false)} // Close when leaving the dropdown
+              onMouseEnter={() => setDropdownVisible(true)}
+              onMouseLeave={() => setDropdownVisible(false)}
             >
-              <a href="/family" onClick={closeDropdown} className="block py-[2px] hover:text-red-700">
+              <Link
+                href="/family"
+                onClick={closeDropdown}
+                className="block py-[2px] hover:text-red-700"
+              >
                 Family Office
-              </a>
-              <a href="/special" onClick={closeDropdown} className="block py-[2px]  hover:text-red-700">
+              </Link>
+              <Link
+                href="/special"
+                onClick={closeDropdown}
+                className="block py-[2px] hover:text-red-700"
+              >
                 Investment Products
-              </a>
-              <a href="/strategic" onClick={closeDropdown} className="block py-[2px]  hover:text-red-700">
+              </Link>
+              <Link
+                href="/strategic"
+                onClick={closeDropdown}
+                className="block py-[2px] hover:text-red-700"
+              >
                 Strategic Advisory
-              </a>
+              </Link>
             </div>
           )}
         </div>
-        <a href="/contact" className="group pb-1 border-b-3 border-transparent">
+        <Link href="/contact" className="group pb-1 border-b-3 border-transparent">
           Contact
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        </a>
+        </Link>
       </div>
 
       {/* Mobile Menu Icon */}
       <button
         type="button"
-        className="md:hidden "
+        className="md:hidden"
         onClick={() => setOpennavbar(true)}
       >
         <Image src={menuIcon} alt="Menu Icon" />
@@ -103,24 +116,24 @@ const NavBar = () => {
           <Image src={closeIcon} alt="Close Menu" />
         </button>
         <div className="flex flex-col space-y-4 mt-12">
-          <a href="/about" className="text-white" onClick={() => setOpennavbar(false)}>
+          <Link href="/about" className="text-white" onClick={() => setOpennavbar(false)}>
             About
-          </a>
-          <a href="/team" className="text-white" onClick={() => setOpennavbar(false)}>
+          </Link>
+          <Link href="/team" className="text-white" onClick={() => setOpennavbar(false)}>
             Team
-          </a>
-          <a href="/family" className="text-white" onClick={() => setOpennavbar(false)}>
+          </Link>
+          <Link href="/family" className="text-white" onClick={() => setOpennavbar(false)}>
             Family Office
-          </a>
-          <a href="/special" className="text-white" onClick={() => setOpennavbar(false)}>
+          </Link>
+          <Link href="/special" className="text-white" onClick={() => setOpennavbar(false)}>
             Special Situations
-          </a>
-          <a href="/strategic" className="text-white" onClick={() => setOpennavbar(false)}>
+          </Link>
+          <Link href="/strategic" className="text-white" onClick={() => setOpennavbar(false)}>
             Strategic Advisory
-          </a>
-          <a href="/contact" className="text-white" onClick={() => setOpennavbar(false)}>
+          </Link>
+          <Link href="/contact" className="text-white" onClick={() => setOpennavbar(false)}>
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>
