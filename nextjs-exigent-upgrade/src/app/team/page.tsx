@@ -36,7 +36,7 @@ export default async function Team() {
       {/* Main Team */}
       <div className="mt-12 grid grid-cols-4 gap-6 mx-auto max-w-6xl">
         {persons.map((person) => (
-          <Link href={`/${person.slug}`} key={person._id} className="block">
+          <Link href='/team/${person.slug}' key={person._id} className="block">
             <div className="px-4 text-center">
               <div className={bodoni.className}>
                 <div className="relative w-40 h-40 mx-auto">

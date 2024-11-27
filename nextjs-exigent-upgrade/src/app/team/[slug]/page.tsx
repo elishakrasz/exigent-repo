@@ -36,6 +36,6 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
   const { slug } = await params
   return (
-    <div>the param is: {slug}</div>
+    <div>the param is test: {slug}</div>
   )
 }
