@@ -61,7 +61,7 @@ export default async function Home() {
       {/* Leadership Section */}
       <div className="mt-36 text-center mx-auto max-w-5xl">
         <div className="justify-items-center mx-auto max-w-3xl">
-          <h3 className="max-w-[280px] text-lg sm:max-w-[500px] sm:text-xl  sm:px-8  md:text-2xl md:max-w-2xl lg:text-3xl xl:text-3xl text-gray-500">
+          <h3 className="max-w-[320px] text-xl sm:max-w-[500px] sm:text-xl  sm:px-8  md:text-2xl md:max-w-2xl lg:text-2xl xl:text-[26px] text-gray-500">
             Exigent is a diversified financial services company with three distinct businesses.
           </h3>
           <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-6"></div>

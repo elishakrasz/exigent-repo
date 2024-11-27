@@ -4,8 +4,8 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <div className="mt-28 text-center mx-auto justify-items-center">
-      <h3 className="text-5xl mb-4">Contact</h3>
-      <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mb-24"></div>
+      <h3 className="text-3xl mb-4">Contact</h3>
+      <div className="h-[3px] w-[60px] md:w-[120px] bg-red-500 rounded mx-auto mb-24"></div>
       <div className="grid grid-cols-3 gap-16">
         {/* Locations */}
         <div className="text-left">

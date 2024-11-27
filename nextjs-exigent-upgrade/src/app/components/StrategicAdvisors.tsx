@@ -15,7 +15,7 @@ const lato = Lato({
 const StrategicAdvisors = () => {
   return (
     <div className="mt-36 text-center mx-auto justify-items-center max-w-5xl">
-      <h3 className="justify-self-center text-5xl mb-4">
+      <h3 className="text-3xl justify-self-center mb-4">
         Strategic Advisors & Domain Experts
       </h3>
       <div className="redline justify-self-center mb-8 h-[3px] w-[120px] bg-red-500 rounded"></div>
