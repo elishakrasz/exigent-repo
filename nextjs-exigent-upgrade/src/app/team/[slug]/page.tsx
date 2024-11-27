@@ -28,15 +28,6 @@ const PERSON_QUERY = `*[_type == "person" && slug.current == $slug][0] | {
 }`;
 const options = { next: { revalidate: 30 } };
 
-interface Person {
-  name: string;
-  title: string;
-  subtitle: string;
-  image: string;
-  slug: { current: string };
-  content: object;
-}
-
 const PortableTextComponents = {
   types: {
     image: ({ value }: { value: { asset: { url: string }; alt?: string } }) => (
@@ -48,7 +39,7 @@ const PortableTextComponents = {
         className="rounded-md my-5 mx-auto"
       />
     ),
-    imageGallery: ({ value }: { value: { images: any[]; caption?: string } }) => (
+    imageGallery: ({ value }: { value: { images: any; caption?: string } }) => (
       <div className="my-8">
         <div className="flex flex-wrap gap-4 justify-center">
           {value.images.map((image, index) => (

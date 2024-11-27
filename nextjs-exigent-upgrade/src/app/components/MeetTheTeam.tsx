@@ -17,16 +17,8 @@ const lato = Lato({
   subsets: ['latin'],
 });
 
-interface Person {
-  name: string;
-  title: string;
-  subtitle: string;
-  image: any;
-  slug: { current: string };
-  gallery: string;
-}
 
-export default function MeetTheTeam({ persons }: { persons: any[] }) {
+export default function MeetTheTeam({ persons }: { persons: any }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {

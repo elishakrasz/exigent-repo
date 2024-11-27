@@ -17,16 +17,7 @@ const lato = Lato({
   subsets: ['latin'],
 });
 
-interface Person {
-  name: string;
-  title: string;
-  subtitle: string;
-  image: any;
-  slug: { current: string };
-  gallery: string
-}
-
-export default function MeetTheTeam({ persons }: { persons: any[] }) {
+export default function MeetTheTeam({ persons }: { persons: any }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [screenSize, setScreenSize] = useState<'mobile' | 'tablet' | 'screen' | 'desktop'>('mobile');
 
@@ -82,7 +73,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
   );
 }
 
-function PersonCard({ person, screenSize }: { person: Person; screenSize: 'mobile' | 'tablet' | 'screen' | 'desktop' }) {
+function PersonCard({ person, screenSize }: { person: any; screenSize: 'mobile' | 'tablet' | 'screen' | 'desktop' }) {
   const cardWidth =
     screenSize === 'desktop' ? 'w-1/4' :
     screenSize === 'screen' ? 'w-1/3' :
