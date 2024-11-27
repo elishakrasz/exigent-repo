@@ -1,12 +1,8 @@
 import type { NextConfig } from "next";
-import { netlifyTool } from 'sanity-plugin-netlify'
-import { dashboardTool } from "@sanity/dashboard";
-import { netlifyWidget } from "sanity-plugin-dashboard-widget-netlify";
-
-
 
 const nextConfig: NextConfig = {
 	reactStrictMode: true,
+    distDir: 'dist',
 
   /* config options here */
 //   plugins: [

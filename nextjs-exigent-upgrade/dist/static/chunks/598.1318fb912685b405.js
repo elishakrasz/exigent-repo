@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[598],{27598:(e,u,s)=>{s.r(u),s.d(u,{default:()=>f});var r=s(16463),t=s(2265);function f(){let e=(0,r.useRouter)(),[u,s]=(0,t.useReducer)(()=>!0,!1);return(0,t.useEffect)(()=>{u||(s(),e.refresh())},[u,e]),null}f.displayName="RefreshOnMount"}}]);
