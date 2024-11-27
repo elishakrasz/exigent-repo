@@ -33,26 +33,26 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 z-50 w-full max-w-6xl flex items-center justify-between lg:justify-between py-6 mx-auto px-10">
+    <div className="sticky top-0 z-50 w-full max-w-7xl md:max-w-5xl lg:max-w-6xl xl:max-w-7xl flex items-center justify-between lg:justify-between py-4 mx-auto px-10">
       {/* Logo */}
       <div>
-        <Link href="/" className="w-28">
-          <Image src={exigentBase} alt="Logo" className="max-h-12" />
+        <Link href="/" className="w-36 mb-2">
+          <Image src={exigentBase} alt="Logo" className="max-h-16" />
         </Link>
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex md:flex-row md:items-center space-x-6 text-base text-gray-500">
-        <Link href="/about" className="group pb-1 border-b-3 border-transparent">
+      <div className="hidden md:flex md:flex-row md:items-center space-x-6 text-base md:text-lg text-gray-500">
+        <Link href="/about" className="group border-b-3 border-transparent">
           About
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </Link>
-        <Link href="/team" className="group pb-1 border-b-3 border-transparent">
+        <Link href="/team" className="group border-b-3 border-transparent">
           Team
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </Link>
         <div
-          className="group relative pb-1 border-b-3 border-transparent cursor-pointer mb-1"
+          className="group relative border-b-3 border-transparent cursor-pointer mb-[6px]"
           onMouseEnter={() => setDropdownVisible(true)}
           onMouseLeave={() => setDropdownVisible(false)}
         >
@@ -87,7 +87,7 @@ const NavBar = () => {
             </div>
           )}
         </div>
-        <Link href="/contact" className="group pb-1 border-b-3 border-transparent">
+        <Link href="/contact" className="group border-b-3 border-transparent">
           Contact
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </Link>
@@ -104,7 +104,7 @@ const NavBar = () => {
 
       {/* Sidebar Menu for Mobile */}
       <div
-        className={`fixed top-0 right-0 h-max pb-6 w-1/4 max-w-xs px-6 bg-gray-800 text-white transform ${
+        className={`fixed top-0 right-0 h-max pb-6 w-1/4 max-w-xs px-6 text-base bg-gray-800 text-white transform ${
           opennavbar ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out z-50`}
       >

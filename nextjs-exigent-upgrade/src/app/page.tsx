@@ -19,36 +19,39 @@ export default async function Home() {
     <div>
       {/* White Screen Animation */}
       <div
-        className="fixed inset-0 bg-white z-[999999] animate-[backgroundanimation_7.5s_ease-in-out_forwards]"
+        className="fixed inset-0 bg-white z-[999999] animate-[backgroundanimation_9.5s_ease-in-out_forwards]"
       ></div>
 
       {/* Gradient Overlay */}
       <div className="relative">
         <div className="w-full max-w-[1200px] mx-auto">
-          <div className="relative z-[9999999] animate-[backgroundanimation_6s_cubic-bezier(0.5,0,0,1)_forwards]">
+          <div className="relative z-[9999999] animate-[backgroundanimation_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
             {/* Rotating Logo X */}
-            <div className="absolute left-[27.45vw] top-[1.5vw] w-[4.5vw] animate-[animation-x_7.5s_cubic-bezier(0.5,0,0,1)_forwards]">
+            <div className="absolute left-[35.45vw] top-[2.5vw] w-[4.5vw] animate-[animation-x_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
               <Image src="/assets/logo-x.svg" alt="Logo X" width={80} height={80} />
             </div>
 
             {/* Logo E Animation */}
-            <div className="absolute top-[1.5vw] left-0 right-0 mx-auto w-[40vw] animate-[animation-1_7.5s_cubic-bezier(0.5,0,0,1)_forwards]">
+            <div className="absolute top-[0.4vw] left-0 right-0 mx-auto w-[40vw] animate-[animation-1_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
               <Image src="/assets/logo-ani-e.svg" alt="Logo E" width={400} height={400} />
             </div>
 
             {/* Text Animations */}
-            <div className="absolute left-[32vw] text-gray-400 uppercase font-[Bodoni Moda] text-[6vw] leading-[7.4vw] animate-[animation-2_7.5s_cubic-bezier(0.5,0,0,1)_forwards]">
+            <div className="absolute left-[40vw] text-gray-400 uppercase font-[Bodoni Moda] text-[7vw] leading-[8.4vw] animate-[animation-2_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
               traordinary People
             </div>
-            <div className="absolute left-[32vw] text-gray-400 uppercase font-[Bodoni Moda] text-[6vw] leading-[7.4vw] animate-[animation-3_7.5s_cubic-bezier(0.5,0,0,1)_forwards]">
+            <div className="absolute left-[40vw] text-gray-400 uppercase font-[Bodoni Moda] text-[7vw] leading-[8.4vw] animate-[animation-3_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
               emplary Values
             </div>
-            <div className="absolute left-[32vw] text-gray-400 uppercase font-[Bodoni Moda] text-[6vw] leading-[7.4vw] animate-[animation-4_7.5s_cubic-bezier(0.5,0,0,1)_forwards]">
+            <div className="absolute left-[40vw] text-gray-400 uppercase font-[Bodoni Moda] text-[7vw] leading-[8.4vw] animate-[animation-4_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
               ceptional Opportunities
+            </div>
+            <div className="absolute left-[40vw] text-gray-400 uppercase font-[Bodoni Moda] text-[7vw] leading-[8.4vw] animate-[animation-4_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
+              ceptional
             </div>
 
             {/* Final Animated Logo */}
-            <div className="absolute top-[0.2vw] left-0 right-0 mx-auto w-[40vw] animate-[animation-8_7.5s_ease-in-out_forwards]">
+            <div className="absolute top-[0.2vw] left-0 right-0 mx-auto w-[40vw] animate-[animation-8_9.5s_ease-in-out_forwards]">
               <Image src="/assets/logo-ani.svg" alt="Final Animated Logo" width={400} height={400} />
             </div>
           </div>
@@ -58,7 +61,7 @@ export default async function Home() {
       {/* Leadership Section */}
       <div className="mt-36 text-center mx-auto max-w-5xl">
         <div className="justify-items-center mx-auto max-w-3xl">
-          <h3 className="sm:text-xl sm:px-8 sm:max-w-2xl md:text-2xl md:max-w-3xl lg:text-3xl xl:text-3xl text-gray-500">
+          <h3 className="max-w-[280px] text-lg sm:max-w-[500px] sm:text-xl  sm:px-8  md:text-2xl md:max-w-2xl lg:text-3xl xl:text-3xl text-gray-500">
             Exigent is a diversified financial services company with three distinct businesses.
           </h3>
           <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-6"></div>
@@ -74,3 +77,5 @@ export default async function Home() {
     </div>
   );
 }
+
+

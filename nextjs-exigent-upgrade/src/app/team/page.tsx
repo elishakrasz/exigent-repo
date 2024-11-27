@@ -1,3 +1,5 @@
+'use-client'
+
 import Image from 'next/image';
 import { urlForImage } from '../sanity/client';
 import { Bodoni_Moda, Lato } from 'next/font/google';
@@ -24,6 +26,7 @@ export default async function Team() {
   const persons = await client.fetch<SanityDocument[]>(PERSON_QUERY, {}, options);
   const others = await client.fetch<SanityDocument[]>(OTHER_QUERY, {}, options);
 
+
   return (
     <div className="mt-8 text-center mx-auto max-w-7xl">
       <div className="mx-auto max-w-3xl">
@@ -36,7 +39,8 @@ export default async function Team() {
       {/* Main Team */}
       <div className="mt-12 grid grid-cols-4 gap-6 mx-auto max-w-6xl">
         {persons.map((person) => (
-          <Link href='/team/${person.slug}' key={person._id} className="block">
+          <a href={`/team/${person.slug.current}`} key={person._id} className="block">
+          {/* <Link href={`/team/${person.slug}`} key={person._id} className="block"> */}
             <div className="px-4 text-center">
               <div className={bodoni.className}>
                 <div className="relative w-40 h-40 mx-auto">
@@ -54,7 +58,7 @@ export default async function Team() {
                 </div>
               </div>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
 
