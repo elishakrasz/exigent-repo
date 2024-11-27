@@ -4,8 +4,8 @@
   publish = "dist"
 
 [[plugins]]
-  package = "@className/plugin-nextjs"
-
+  package = "@netlify/plugin-nextjs"
+  
 [build.environment]
   NODE_VERSION = "21"
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
