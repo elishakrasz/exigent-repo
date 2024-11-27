@@ -7,6 +7,6 @@
   package = "@className/plugin-nextjs"
 
 [build.environment]
-  NODE_VERSION = "16"
+  NODE_VERSION = "21"
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
