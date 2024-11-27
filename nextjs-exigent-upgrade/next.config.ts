@@ -4,7 +4,10 @@ import { dashboardTool } from "@sanity/dashboard";
 import { netlifyWidget } from "sanity-plugin-dashboard-widget-netlify";
 
 
+
 const nextConfig: NextConfig = {
+	reactStrictMode: true,
+
   /* config options here */
 //   plugins: [
 //     dashboardTool({
