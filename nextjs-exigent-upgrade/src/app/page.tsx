@@ -7,6 +7,8 @@ import MeetTheTeam from './components/MeetTheTeam'
 import Investments from './components/Investments'
 import StrategicAdvisors from './components/StrategicAdvisors'
 import Contact from './components/Contact'
+import BusinessSectionTwo from "./components/BusinessCardTwo";
+import MeetTheTeamTwo from "./components/MeetTheTeamTwo";
 
 const PERSON_QUERY = `*[_type == "person" && order < 12] | order(order asc) | { _id,name,title, subtitle, description, image, slug, order }`
 
@@ -67,9 +69,10 @@ export default async function Home() {
           <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-6"></div>
         </div>
       </div>
-      <BusinessCard />
-      <MeetTheTeam persons={persons} />
-      {/* <MeetTheTeamTwo persons={persons}/> */}
+      {/* <BusinessCard /> */}
+      <BusinessSectionTwo />
+      {/* <MeetTheTeam persons={persons} /> */}
+      <MeetTheTeamTwo persons={persons}/>
       <Investments />
       <StrategicAdvisors />
       <Firm />

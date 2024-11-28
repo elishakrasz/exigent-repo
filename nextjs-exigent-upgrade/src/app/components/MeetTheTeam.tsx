@@ -33,7 +33,7 @@ export default function MeetTheTeam({ persons }: { persons: any }) {
     <div className="mt-32 text-center mx-auto justify-items-center">
       <h3 className="text-3xl justify-self-center mb-4">Meet the Team</h3>
       <div className="redline justify-self-center mb-8 h-[3px] w-[120px] bg-red-500 rounded"></div>
-      <div className="relative w-full max-w-5xl mx-auto mt-10">
+      <div className="relative w-full max-w-7xl mx-auto mt-10">
         {/* Button: Previous */}
         <button
           className="absolute left-[-2rem] top-1/2 transform -translate-y-1/2 text-black font-bold p-2 z-10"
@@ -63,7 +63,7 @@ export default function MeetTheTeam({ persons }: { persons: any }) {
                 style={{ minWidth: '25%' }} // Ensures 4 cards fit exactly
               >
                 <Link href={`team/${person.slug.current}`} key={index} className="">
-                  <div className="border border-gray-300 h-[315px] w-[230px]">
+                  <div className="border border-gray-300 h-[350px] w-[250px]">
                     <div className={bodoni.className}>
                       <div className="mt-10 w-3/5 mx-auto">
                         <Image
@@ -74,7 +74,7 @@ export default function MeetTheTeam({ persons }: { persons: any }) {
                           className="object-contain"
                         />
                       </div>
-                      <p className="text-2xl font-semibold mt-2">{person.name}</p>
+                      <p className="text-3xl font-normal mt-2">{person.name}</p>
                       <div className={lato.className}>
                         <p className="text-[18px] italic mt-2 text-gray-600">
                           {person.title}

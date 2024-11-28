@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Bodoni_Moda, Lato } from 'next/font/google';
 import { urlForImage } from '../sanity/client';
+import { Bodoni_Moda, Lato } from 'next/font/google';
+import Link from 'next/link';
 
 const bodoni = Bodoni_Moda({
   subsets: ['latin'],
@@ -17,104 +17,113 @@ const lato = Lato({
   subsets: ['latin'],
 });
 
-export default function MeetTheTeam({ persons }: { persons: any }) {
+export default function MeetTheTeam({ persons }: { persons: any[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [screenSize, setScreenSize] = useState<'mobile' | 'tablet' | 'screen' | 'desktop'>('mobile');
+  const [visibleCards, setVisibleCards] = useState(1);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1280) setScreenSize('desktop');
-      else if (window.innerWidth >= 1024) setScreenSize('screen');
-      else if (window.innerWidth >= 768) setScreenSize('tablet');
-      else setScreenSize('mobile');
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const visibleCount = {
-    desktop: 4,
-    screen: 3,
-    tablet: 2,
-    mobile: 1,
+  // Update visible cards based on screen size
+  const updateVisibleCards = () => {
+    if (window.innerWidth >= 1280) setVisibleCards(4); // Large screens
+    else if (window.innerWidth >= 1024) setVisibleCards(3); // Desktop
+    else if (window.innerWidth >= 668) setVisibleCards(2); // Tablet
+    else setVisibleCards(1); // Mobile
   };
 
+  useEffect(() => {
+    updateVisibleCards();
+    window.addEventListener('resize', updateVisibleCards);
+    return () => window.removeEventListener('resize', updateVisibleCards);
+  }, []);
+
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? Math.max(0, persons.length - visibleCount[screenSize]) : prev - 1));
+    setCurrentIndex((prev) =>
+      prev === 0 ? Math.max(0, persons.length - visibleCards) : prev - 1
+    );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + visibleCount[screenSize] >= persons.length ? 0 : prev + 1));
+    setCurrentIndex((prev) =>
+      prev >= Math.max(0, persons.length - visibleCards) ? 0 : prev + 1
+    );
   };
 
-  const visiblePersons = persons.slice(currentIndex, currentIndex + visibleCount[screenSize]);
-
   return (
-    <section className="max-w-8xl mt-8 sm:mt-16 md:mt-24 lg:mt-32 text-center mx-auto px-6 sm:px-36 md:px-24 lg:px-20">
-      <h2 className={`${bodoni.className} text-3xl sm:text-4xl md:text-5xl mb-4`}>Meet the Team</h2>
-      <div className="redline mx-auto mb-6 sm:mb-8 h-[3px] w-[120px] bg-red-500 rounded"></div>
+    <div className="mt-32 text-center mx-auto max-w-7xl px-4">
+      <h3 className="text-3xl mb-4">Meet the Team</h3>
+      <div className="redline mb-8 h-[3px] w-[120px] bg-red-500 rounded mx-auto"></div>
+      <div className="relative overflow-hidden">
+        {/* Button: Previous */}
+        <button
+          className="absolute left-[2px] top-1/2 transform -translate-y-1/2 text-black z-10p-2"
+          onClick={handlePrev}
+        >
+          <Image
+            src="/assets/arrow_left.png"
+            alt="Previous Arrow"
+            width={24}
+            height={24}
+          />
+        </button>
 
-      <div className="relative w-full max-w-7xl mx-auto mt-6 sm:mt-8 md:mt-10">
-        <CarouselButton direction="left" onClick={handlePrev} disabled={currentIndex === 0} />
-
+        {/* Carousel Track */}
         <div className="overflow-hidden">
-          <div className={`flex transition-transform duration-500 justify-center gap-4`}>
-            {visiblePersons.map((person, index) => (
-              <PersonCard key={index} person={person} screenSize={screenSize} />
+          <div
+            className="flex transition-transform duration-500 gap-1"
+            style={{
+              transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`,
+            }}
+          >
+            {persons.map((person, index) => (
+              <div
+                key={index}
+                className="flex-none px-0.5"
+                style={{
+                  width: `calc(${100 / visibleCards}% - 3px)`,
+                }}
+              >
+                <Link href={`team/${person.slug.current}`}>
+                  <div className="border border-gray-300 h-[350px] w-[275px] px-4 mx-auto">
+                    <div className={bodoni.className}>
+                      <div className="mt-10 w-full flex justify-center">
+                        <Image
+                          src={urlForImage(person.image).quality(100).url()}
+                          alt={person.name}
+                          width={150}
+                          height={150}
+                          className="object-contain mx-auto"
+                        />
+                      </div>
+                      <p className="text-3xl font-normal mt-2">{person.name}</p>
+                      <div className={lato.className}>
+                        <p className="text-[18px] italic mt-2 text-gray-600">
+                          {person.title}
+                        </p>
+                        <p className="text-[18px] mb-12 text-gray-600">
+                          {person.subtitle}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             ))}
           </div>
         </div>
 
-        <CarouselButton direction="right" onClick={handleNext} disabled={currentIndex + visibleCount[screenSize] >= persons.length} />
+        {/* Button: Next */}
+        <button
+          className="absolute right-[-2px] top-1/2 transform -translate-y-1/2 text-black z-10 p-2"
+          onClick={handleNext}
+        >
+          <Image
+            src="/assets/arrow_right.png"
+            alt="Next Arrow"
+            width={24}
+            height={24}
+          />
+        </button>
       </div>
-    </section>
-  );
-}
-
-function PersonCard({ person, screenSize }: { person: any; screenSize: 'mobile' | 'tablet' | 'screen' | 'desktop' }) {
-  const cardWidth =
-    screenSize === 'desktop' ? 'w-1/4' :
-    screenSize === 'screen' ? 'w-1/3' :
-    screenSize === 'tablet' ? 'w-1/2' : 'w-full';
-
-  return (
-    <Link href={`team/${person.slug.current}`} className={`${cardWidth} `}>
-      <div className="border border-gray-300 h-[280px] sm:h-[300px] md:h-[320px] flex flex-col items-center justify-center">
-        <Image
-          className="w-24 sm:w-28 object-contain mb-4"
-          src={urlForImage(person.image).quality(100).url()}
-          alt={person.name}
-          width={120}
-          height={120}
-        />
-        <h3 className={`${bodoni.className} text-lg sm:text-xl md:text-2xl font-semibold`}>{person.name}</h3>
-        <div className={`${lato.className} mt-2`}>
-          <p className="text-sm sm:text-base md:text-lg italic text-gray-600">{person.title}</p>
-          <p className="text-sm sm:text-base md:text-lg text-gray-600">{person.subtitle}</p>
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-
-
-function CarouselButton({ direction, onClick, disabled }: { direction: 'left' | 'right'; onClick: () => void; disabled: boolean }) {
-  return (
-    <button
-      className={`absolute top-1/2 transform -translate-y-1/2 ${direction === 'left' ? '-left-10' : '-right-10'} text-black p-2 z-10 ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
-      onClick={onClick}
-      disabled={disabled}
-    >
-      <Image
-        src={`/assets/arrow_${direction}.png`}
-        alt={`${direction} arrow`}
-        width={26}
-        height={26}
-      />
-    </button>
+    </div>
   );
 }
 

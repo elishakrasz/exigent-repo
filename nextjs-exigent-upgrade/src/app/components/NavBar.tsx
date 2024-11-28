@@ -33,7 +33,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 z-50 w-full md:max-w-[720px] lg:max-w-[940px] xl:max-w-[1180px] 2xl:max-w-[1320px] flex items-center justify-between lg:justify-between py-4 mx-auto px-8">
+    <div className="sticky top-0 z-50 w-full md:max-w-[720px] lg:max-w-[940px] xl:max-w-[1120px] 2xl:max-w-[1320px] flex items-center justify-between lg:justify-between py-4 mx-auto px-8">
       {/* Logo */}
       <div>
         <Link href="/" className="w-36 mb-2">
@@ -42,7 +42,7 @@ const NavBar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex md:flex-row md:items-center space-x-6 text-base md:text-lg text-gray-500">
+      <div className="hidden md:flex md:flex-row md:items-center space-x-6 text-base text-gray-500">
         <Link href="/about" className="group border-b-3 border-transparent">
           About
           <div className="border-b-2 rounded-full border-red-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

@@ -20,9 +20,9 @@ const StrategicAdvisors = () => {
       </h3>
       <div className="redline justify-self-center mb-8 h-[3px] w-[120px] bg-red-500 rounded"></div>
 
-      <div className="mt-8 mx-auto max-w-6xl grid grid-cols-11 gap-4">
+      <div className="mt-8 max-w-[300px] mx-auto lg:max-w-6xl md:grid md:grid-cols-11 md:gap-4">
         {/* Sir General Nick Carter */}
-        <div className="col-span-4 border border-gray-300 px-2">
+        <div className="my-6 col-span-4 border border-gray-300 px-2">
           <div className={bodoni.className}>
             <div className="mt-10 w-3/5 mx-auto">
               <Image
@@ -41,7 +41,7 @@ const StrategicAdvisors = () => {
         </div>
 
         {/* Dr. Elie David */}
-        <div className="col-span-3 border border-gray-300 px-2">
+        <div className="my-6 col-span-3 border border-gray-300 px-2">
           <div className={bodoni.className}>
             <div className="mt-14 mx-auto w-[188px]">
               <Image
@@ -70,10 +70,10 @@ const StrategicAdvisors = () => {
                 height={200}
               />
             </div>
-            <p className="text-3xl mt-2 font-normal">Hon. Malcolm Hoenlein</p>
+            <p className="text-2xl md:text-3xl mt-2 font-normal">Hon. Malcolm Hoenlein</p>
             <div className={lato.className}>
-              <p className="text-[18px] italic mt-2 text-gray-600">Global Ambassador</p>
-              <p className="text-[18px] mb-12 text-gray-600">Exigent Family Office</p>
+              <p className="text-[16px] md:text-[18px] italic mt-2 text-gray-600">Global Ambassador</p>
+              <p className="text-[16px] md:text-[18px] mb-12 text-gray-600">Exigent Family Office</p>
             </div>
           </div>
         </div>
