@@ -20,12 +20,12 @@ export default function About() {
       <div className="grid grid-cols-1 gap-8 md:px-16 md:grid-cols-12 md:gap-4">
         <section className="text-center md:col-span-5">
           <h1 className="sr-only">About Exigent</h1>
-          <p className="mt-4 text-lg tracking-wider">
+          <p  className={`${bodoni.className} bodoni inline px-1 mt-4 text-3xl tracking-wider`}>
             e
             <span>
-              <Image src="/assets/small-x.svg" alt="" width={18} height={18} className={`${bodoni.className} font-serif inline px-1`} />
+              <Image src="/assets/small-x.svg" alt="" width={12} height={12} />
             </span>
-            igent <span className="font-sans font-light text-sm normal-case">adjective</span>
+            igent <span className="font-sans font-light text-base normal-case">adjective</span>
           </p>
           <p className="mt-2 text-sm ">
             ex
@@ -47,7 +47,7 @@ export default function About() {
 
         <section className="flex flex-col items-center md:items-start md:col-span-6">
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-center md:text-left">About</h2>
+            <h2 className="text-4xl sm:text-4xl md:text-4xl font-normal text-center md:text-left">About</h2>
             <div className="h-1 w-24 bg-red-500 rounded mt-4 mx-auto md:mx-0"></div>
           </div>
           <p className="text-sm text-gray-600 mt-8 max-w-xl leading-relaxed text-center md:text-left">
@@ -58,7 +58,7 @@ export default function About() {
           </p>
           <Link 
             href="/contact" 
-            className="mt-8 inline-block font-normal rounded-full border px-6 py-1 border-gray-400 hover:bg-gray-100 transition-colors"
+            className="mt-8 inline-block text-sm  rounded-full border px-6 py-1 border-gray-400 hover:bg-[#F90002] hover:text-white transition-colors"
           >
             Contact Us
           </Link>

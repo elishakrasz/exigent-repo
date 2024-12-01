@@ -30,18 +30,18 @@ export default async function Team() {
   return (
     <div className="mt-8 text-center mx-auto max-w-7xl">
       <div className="mx-auto max-w-3xl">
-        <h3 className="text-3xl font-semibold text-gray-700">
+        <h3 className="text-2xl mx-10 md:text-3xl font-semibold text-gray-700">
           An Experienced and Dedicated Team at Your Service
         </h3>
         <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
       </div>
 
       {/* Main Team */}
-      <div className="mt-12 grid grid-cols-4 gap-6 mx-auto max-w-6xl">
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid md:grid-cols-4 md:gap-2 mx-auto max-w-6xl">
         {persons.map((person) => (
           <a href={`/team/${person.slug.current}`} key={person._id} className="block pb-4">
           {/* <Link href={`/team/${person.slug}`} key={person._id} className="block"> */}
-            <div className="px-4 text-center">
+            <div className="px-4 text-center mb-4">
               <div className={bodoni.className}>
                 <div className="relative w-40 h-40 mx-auto">
                   <Image
@@ -63,13 +63,13 @@ export default async function Team() {
       </div>
 
       {/* Other Members */}
-      <div className="mt-16 grid grid-cols-6 gap-8 mx-auto max-w-6xl">
-        <div className="col-span-1"></div>
+      <div className="md:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 md:gap-8 mx-auto max-w-6xl pb-24">
+        {/* <div className="col-span-1"></div> */}
         {others.map((other) => (
-          <div key={other._id} className="col-span-2">
-            <div className="px-4 text-center">
+          <div key={other._id} className="col-span-1 md:col-span-3">
+            <div className="px-4 text-center mb-4">
               <div className={bodoni.className}>
-                <div className="relative w-32 h-32 mx-auto">
+                <div className="relative w-40 h-40 md:w-32 md:h-32 mx-auto">
                   <Image
                     src={urlForImage(other.image).quality(100).url()}
                     alt={other.name}
