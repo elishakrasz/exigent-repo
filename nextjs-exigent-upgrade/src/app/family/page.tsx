@@ -79,25 +79,29 @@ const Family = () => {
           </div>
         </div>
 
-        {/* Services Grid */}
-        <div className="mx-auto md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:items-center md:space-y-0 md:gap-8 px-4 lg:px-0 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600  text-gray-900 md:border-r-2 md:border-slate-800">
-          {[
-            "Investment and Wealth Management",
-            "Comprehensive Reporting",
-            "Tax and Estate Planning",
-            "Philanthropic Advisory",
-            "Family Governance and Succession Planning",
-            "Networking and Unique Events",
-          ].map((service, index) => (
-            <div key={index} className={lato.className}>
-              <h1 className="text-sm font-sans md:text-sm py-4 px-4">
-                {service}
-              </h1>
-              <p className="border-b-2 border-slate-900 w-20 mx-auto md:border-0"></p>
-            </div>
-          ))}
-        </div>
+      
       </div>
+
+{/* Services Grid */}
+<div className="mx-auto md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:items-center md:gap-0 px-4 md:px-0 lg:px-0 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
+  {[
+    "Investment and Wealth Management",
+    "Comprehensive Reporting",
+    "Tax and Estate Planning",
+    "Philanthropic Advisory",
+    "Family Governance and Succession Planning",
+    "Networking and Unique Events",
+  ].map((service, index) => (
+    <div
+      key={index}
+      className={`${lato.className} py-4 px-4 ${
+        index === 5 ? "md:after:hidden" : ""
+      }`}
+    >
+      <h1 className="text-sm font-sans md:text-sm">{service}</h1>
+    </div>
+  ))}
+</div>
 
       {/* Leadership Section */}
       <div>
