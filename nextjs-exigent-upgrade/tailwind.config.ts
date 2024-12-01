@@ -14,22 +14,22 @@ const config: Config = {
       },
       
     },
-    screens: {
-      'sm': '520px',
-      // => @media (min-width: 640px) { ... }
+    // screens: {
+    //   'sm': '520px',
+    //   // => @media (min-width: 640px) { ... }
 
-      'md': '640px',
-      // => @media (min-width: 768px) { ... }
+    //   'md': '640px',
+    //   // => @media (min-width: 768px) { ... }
 
-      'lg': '960px',
-      // => @media (min-width: 1024px) { ... }
+    //   'lg': '960px',
+    //   // => @media (min-width: 1024px) { ... }
 
-      'xl': '1080px',
-      // => @media (min-width: 1280px) { ... }
+    //   'xl': '1080px',
+    //   // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-    },
+    //   '2xl': '1536px',
+    //   // => @media (min-width: 1536px) { ... }
+    // },
     keyframes: {
       backgroundanimation: {
         "0%, 60%": { opacity: "1", zIndex: "999999" }, // Visible state extended

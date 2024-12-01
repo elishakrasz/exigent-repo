@@ -6,7 +6,7 @@ const BusinessCard = () => {
     <div className="px-8 max-w-[380px] sm-max-w-[480px] md:max-w-[840px] lg:max-w-[920px] xl:max-w-[10060] mt-12 mx-auto text-center grid grid-cols-1 lg:grid-cols-3 lg:gap-2">
       {/* Family Office Section */}
       <div className="" >
-        <h1 className="text-2xl font-semibold">Family Office</h1>
+        <h1 className="text-4xl font-semibold">Family Office</h1>
         <p className="text-gray-400 text-base mt-2 md:mt-0">For high-net-worth families</p>
         <div className="w-2/3 mt-8 mx-auto md:w-1/2 lg:w-2/3">
           <Image
@@ -27,7 +27,7 @@ const BusinessCard = () => {
 
       {/* Investment Products Section */}
       <div className="py-4 md:mt-4 lg:py-0 lg:mt-0">
-        <h1 className="text-2xl font-semibold">Investment Products</h1>
+        <h1 className="text-xl font-semibold">Investment Products</h1>
         <p className="text-gray-400 text-base mt-2 md:mt-0">
           For well-qualified investors
         </p>
@@ -50,7 +50,7 @@ const BusinessCard = () => {
 
       {/* Strategic Advisory Section */}
       <div className="md:mt-4 lg:py-0 lg:mt-0">
-        <h1 className="text-2xl font-semibold">Strategic Advisory</h1>
+        <h1 className="text-3xl font-semibold">Strategic Advisory</h1>
         <p className="text-gray-400 text-base mt-2 md:mt-0">
           For businesses and corporates
         </p>

@@ -14,15 +14,15 @@ const lato = Lato({
 
 const StrategicAdvisors = () => {
   return (
-    <div className="mt-36 text-center mx-auto justify-items-center max-w-5xl">
-      <h3 className="text-3xl justify-self-center mb-4">
+    <div className="mt-24 text-center mx-auto justify-items-center sm:max-w-[420px] md:max-w-3xl lg:max-w-5xl">
+      <h3 className="text-3xl justify-self-center mb-4 md:text-4xl lg:text-4xl">
         Strategic Advisors & Domain Experts
       </h3>
       <div className="redline justify-self-center mb-8 h-[3px] w-[120px] bg-red-500 rounded"></div>
 
-      <div className="mt-8 max-w-[300px] mx-auto lg:max-w-6xl md:grid md:grid-cols-11 md:gap-4">
+      <div className="mt-8 max-w-[300px] mx-auto md:max-w-3xl md:grid md:grid-cols-11 md:gap-4 lg:max-w-6xl">
         {/* Sir General Nick Carter */}
-        <div className="my-6 col-span-4 border border-gray-300 px-2">
+        <div className="my-6 md:my-0 md:col-span-4 border border-gray-300 px-2 h-[400px]">
           <div className={bodoni.className}>
             <div className="mt-10 w-3/5 mx-auto">
               <Image
@@ -41,9 +41,9 @@ const StrategicAdvisors = () => {
         </div>
 
         {/* Dr. Elie David */}
-        <div className="my-6 col-span-3 border border-gray-300 px-2">
+        <div className="my-6 md:my-0 md:col-span-3 border border-gray-300 px-2  h-[400px] lg:mb-4">
           <div className={bodoni.className}>
-            <div className="mt-14 mx-auto w-[188px]">
+            <div className="mt-14 md:mt-10 md:w-4/5 mx-auto w-[188px]">
               <Image
                 src="/assets/team/David.png"
                 alt="Dr. Elie David"
@@ -60,7 +60,7 @@ const StrategicAdvisors = () => {
         </div>
 
         {/* Hon. Malcolm Hoenlein */}
-        <div className="col-span-4 border border-gray-300 px-2">
+        <div className="md:col-span-4 md:mt-0 border border-gray-300 px-2 h-[400px]">
           <div className={bodoni.className}>
             <div className="mt-10 w-3/5 mx-auto">
               <Image
@@ -70,10 +70,10 @@ const StrategicAdvisors = () => {
                 height={200}
               />
             </div>
-            <p className="text-2xl md:text-3xl mt-2 font-normal">Hon. Malcolm Hoenlein</p>
+            <p className="text-3xl mt-2 font-normal">Hon. Malcolm Hoenlein</p>
             <div className={lato.className}>
-              <p className="text-[16px] md:text-[18px] italic mt-2 text-gray-600">Global Ambassador</p>
-              <p className="text-[16px] md:text-[18px] mb-12 text-gray-600">Exigent Family Office</p>
+              <p className="text-[18px] italic mt-2 text-gray-600">Global Ambassador</p>
+              <p className="text-[18px] mb-12 text-gray-600">Exigent Family Office</p>
             </div>
           </div>
         </div>

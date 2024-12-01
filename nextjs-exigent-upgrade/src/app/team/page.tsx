@@ -30,7 +30,7 @@ export default async function Team() {
   return (
     <div className="mt-8 text-center mx-auto max-w-7xl">
       <div className="mx-auto max-w-3xl">
-        <h3 className="text-2xl font-semibold text-gray-900">
+        <h3 className="text-3xl font-semibold text-gray-700">
           An Experienced and Dedicated Team at Your Service
         </h3>
         <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
@@ -39,7 +39,7 @@ export default async function Team() {
       {/* Main Team */}
       <div className="mt-12 grid grid-cols-4 gap-6 mx-auto max-w-6xl">
         {persons.map((person) => (
-          <a href={`/team/${person.slug.current}`} key={person._id} className="block">
+          <a href={`/team/${person.slug.current}`} key={person._id} className="block pb-4">
           {/* <Link href={`/team/${person.slug}`} key={person._id} className="block"> */}
             <div className="px-4 text-center">
               <div className={bodoni.className}>

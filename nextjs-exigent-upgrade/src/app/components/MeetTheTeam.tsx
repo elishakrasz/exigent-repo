@@ -31,7 +31,7 @@ export default function MeetTheTeam({ persons }: { persons: any }) {
 
   return (
     <div className="mt-32 text-center mx-auto justify-items-center">
-      <h3 className="text-3xl justify-self-center mb-4">Meet the Team</h3>
+      <h3 className="text-3xl justify-self-center mb-4 md:text-4xl">Meet the Team</h3>
       <div className="redline justify-self-center mb-8 h-[3px] w-[120px] bg-red-500 rounded"></div>
       <div className="relative w-full max-w-7xl mx-auto mt-10">
         {/* Button: Previous */}

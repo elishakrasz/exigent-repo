@@ -49,7 +49,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
 
   return (
     <div className="mt-32 text-center mx-auto max-w-7xl px-4">
-      <h3 className="text-3xl mb-4">Meet the Team</h3>
+      <h3 className="text-3xl mb-4 md:text-4xl">Meet the Team</h3>
       <div className="redline mb-8 h-[3px] w-[120px] bg-red-500 rounded mx-auto"></div>
       <div className="relative overflow-hidden">
         {/* Button: Previous */}

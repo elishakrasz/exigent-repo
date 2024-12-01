@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./utilities/Button";
 
 
 const BusinessSectionTwo = () => {
   return (
-    <div className="text-center mx-auto mt-14 px-4 md:px-10 lg:px-20 max-w-7xl">
+    <div className="text-center mx-auto max-w-[460px] mt-14 px-4 md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
       {/* Header Section */}
       {/* <div className="mb-16">
         <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-700">
@@ -15,62 +16,48 @@ const BusinessSectionTwo = () => {
       </div> */}
 
       {/* Business Cards Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-2">
         {/* Family Office */}
         <div className="flex flex-col items-center">
-          <h4 className="text-lg font-semibold text-gray-800">Family Office</h4>
+          <h4 className="text-3xl font-semibold text-gray-800 md:text-xl lg:text-2xl xl:text-2xl">Family Office</h4>
           <p className="text-sm text-gray-500 mt-2">For high-net-worth families</p>
           <Image
             src="/assets/Birds.png"
             alt="Family Office"
             width={200}
             height={200}
-            className="mt-6 w-2/3 object-contain"
+            className="mt-6 md:mt-5 w-2/3 object-contain"
           />
-          <Link
-          href="/family"
-          className="text-sm inline-block mt-4 hover:bg-red-600 hover:text-white font-sans font-normal md:text-base border-2 border-gray-400 py-1 rounded-full px-6"
-        >
-          Learn more
-        </Link>
+        <Button />
         </div>
 
         {/* Investment Products */}
-        <div className="flex flex-col items-center">
-          <h4 className="text-lg font-semibold text-gray-800">Investment Products</h4>
+        <div className="mt-6 flex flex-col items-center md:mt-0">
+          <h4 className="text-3xl font-semibold text-gray-800 md:text-xl lg:text-2xl xl:text-2xl">Investment Products</h4>
           <p className="text-sm text-gray-500 mt-2">For well-qualified investors</p>
           <Image
             src="/assets/ShipA.jpg"
             alt="Investment Products"
             width={200}
             height={200}
-            className="mt-6 w-2/3 object-contain"
+            className="mt-6 md:mt-1 w-2/3 object-contain"
           />
-          <Link
-          href="/family"
-          className="text-sm inline-block mt-4 hover:bg-red-600 hover:text-white font-sans font-normal md:text-base border-2 border-gray-400 py-1 rounded-full px-6"
-        >
-          Learn more
-        </Link>
+          
+        <Button />
         </div>
 
         {/* Strategic Advisory */}
-        <div className="flex flex-col items-center">
-          <h4 className="text-lg font-semibold text-gray-800">Strategic Advisory</h4>
+        <div className="mt-6 flex flex-col items-center md:mt-0">
+          <h4 className="text-3xl  font-semibold text-gray-800 md:text-xl lg:text-2xl xl:text-2xl">Strategic Advisory</h4>
           <p className="text-sm text-gray-500 mt-2">For businesses and corporates</p>
           <Image
             src="/assets/Cufflink.jpg"
             alt="Strategic Advisory"
             width={200}
             height={200}
-            className="mt-6 w-2/3 object-contain"
+            className="mt-6 md:mt-5 w-[60%] object-contain"
           />
-         <Link
-          href="/family"
-          className="text-sm inline-block mt-4 hover:bg-red-600 hover:text-white font-sans font-normal md:text-base border-2 border-gray-400 py-1 rounded-full px-6"
-        >
-          Learn more
-        </Link>
+         <Button />
         </div>
       </div>
     </div>

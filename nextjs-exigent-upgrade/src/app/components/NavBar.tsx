@@ -33,7 +33,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 z-50 w-full md:max-w-[720px] lg:max-w-[940px] xl:max-w-[1120px] 2xl:max-w-[1320px] flex items-center justify-between lg:justify-between py-4 mx-auto px-8">
+    <div className="sticky top-0 z-50 w-full md:max-w-3xl md:px-0 lg:max-w-[940px] xl:max-w-[1120px] 2xl:max-w-[1320px] flex items-center justify-between lg:justify-between py-4 mx-auto px-8">
       {/* Logo */}
       <div>
         <Link href="/" className="w-36 mb-2">

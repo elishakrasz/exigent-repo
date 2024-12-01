@@ -9,14 +9,14 @@ const lato = Lato({
 
 const Investments = () => {
   return (
-    <div className="text-center mt-16 mx-auto max-w-4xl justify-items-center">
-      <h3 className="text-3xl max-w-[300px] sm:max-w-[300px] sm:text-3xl md:text-4xl md:max-w-[540px] lg:text-4xl lg:max-w-4xl">
+    <div className="text-center mx-auto max-w-[460px] mt-16 md:max-w-4xl lg:max-w-5xl xl:max-w-5xl">
+      <h3 className="text-3xl px-6 md:px-36 md:text-4xl">
         Notable Investments & Partnerships
       </h3>
 
       <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
 
-      <div className="mt-12 mx-auto max-w-[280px] md:max-w-[340px] text-base lg:flex lg:max-w-6xl">
+      <div className="mt-12 mx-auto text-base max-w-[280px] md:max-w-3xl md:mx-12 md:grid md:grid-cols-3 lg:flex lg:max-w-6xl">
         {/* Investment 1 */}
         <div className="mt-6 text-base">
           <div>
@@ -28,7 +28,7 @@ const Investments = () => {
               className="mx-auto"
             />
           </div>
-          <div className="mt-8 md:text-[18px] md:mt-10 lg:w-64 px-4">
+          <div className="mt-8 text-[18px] md:mt-9 md:text-sm md:w-full md:px-2 md:leading-6 lg:text-base xl:text-[18px] xl:w-66 xl:leading-7">
             <h1 className={lato.className}>
               <span className="font-light italic">
                 We are early backers of Elon Musk in his mission to build the
@@ -39,7 +39,7 @@ const Investments = () => {
         </div>
 
         {/* Investment 2 */}
-        <div className="mt-10 lg:w-64 px-4">
+        <div className="mt-8 px-4">
           <div>
             <Image
               src="/assets/investments/HP.png"
@@ -49,9 +49,9 @@ const Investments = () => {
               className="mx-auto"
             />
           </div>
-          <div className="mt-8 md:text-[18px] md:mt-10 lg:mt-4 lg:w-64 px-4">
+          <div className="mt-6 text-[18px] md:w-full md:px-2 xl:w-66 xl:px-10 xl:leading-7">
             <h1 className={lato.className}>
-              <span className="font-light md:text-[18px] italic">
+              <span className="font-light md:text-sm lg:text-base md:leading-6 xl:text-[18px] italic">
                 We are GP partners with Bezos and Moros families in HighPost
                 Capital and anchor investors in the firms consumer-focused
                 investment funds
@@ -71,9 +71,9 @@ const Investments = () => {
               className="mx-auto mt-6"
             />
           </div>
-          <div className="mt-10 lg:max-w-full lg:mt-12 lg:w-64 px-4">
+          <div className="mt-11 text-[18px]  md:w-full md:px-2 xl:w-66 xl:leading-7">
             <h1 className={lato.className}>
-              <span className="font-light md:text-[18px] italic">
+              <span className="font-light md:text-sm lg:text-base md:leading-6 xl:text-[18px] italic">
                 We are board members and major shareholders in Insightec, the
                 world leader in incisionless brain surgery
               </span>

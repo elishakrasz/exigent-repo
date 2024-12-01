@@ -15,9 +15,9 @@ const Strategic = () => {
   return (
     <div className="text-center mx-auto max-w-6xl">
       {/* Main Section */}
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-6">
         {/* Text Section */}
-        <div className="justify-items-center mx-auto max-w-3xl mt-10">
+        <div className="justify-items-center mx-auto mt-10">
           <h3 className="justify-self-center text-5xl mb-4">Strategic Advisory</h3>
           <div className={lato.className}>
             <h3 className="text-[18px] font-sans text-gray-400">
@@ -38,7 +38,7 @@ const Strategic = () => {
         </div>
 
         {/* Image Section */}
-        <div>
+        <div className='col-span-2'>
           <Image
             className="w-2/3 mx-auto"
             src="/assets/Cufflink.jpg"
