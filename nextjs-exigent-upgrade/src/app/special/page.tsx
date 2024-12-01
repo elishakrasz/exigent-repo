@@ -101,10 +101,10 @@ const Special = () => {
             Contact Us
           </span>
         </div>
-        <h3 className="text-3xl lg:text-4xl mb-4">
+        {/* <h3 className="text-3xl lg:text-4xl mb-4">
           Notable Investments & Partnerships
         </h3>
-        <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
+        <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div> */}
 
         {/* Investments Grid */}
         {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-16">
