@@ -14,56 +14,91 @@ const lato = Lato({
 const Strategic = () => {
   return (
     <div className="text-center mx-auto max-w-6xl">
-      {/* Main Section */}
-      <div className="grid grid-cols-6">
-        {/* Text Section */}
-        <div className="justify-items-center mx-auto mt-10">
-          <h3 className="justify-self-center text-5xl mb-4">Strategic Advisory</h3>
-          <div className={lato.className}>
-            <h3 className="text-[18px] font-sans text-gray-400">
-              For business owners and management teams
-            </h3>
-          </div>
-          <div className="head-small-red-line h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
-          <div className="mt-8 text-left ml-16">
-            <h1 className="font-sans text-gray-600 font-light mt-16">
-              <span className="font-semibold text-gray-800">Exigent Strategic Advisors</span> is a
+
+<div className="max-w-7xl mt-10">
+        <div className="">
+          {/* Text Section */}
+          <div className="">
+            <div className="md:grid md:grid-cols-6 mt-8">
+              <div className="md:col-span-4">
+                <div className="md:text-5xl text-center font-semibold leading-10">
+                  <h3 className="text-3xl sm:text-4xl md:font-normal">
+                  Strategic Advisory  
+                  </h3>
+                  <p className="text-base md:text-lg font-light mt-2 text-gray-500 leading-relaxed">
+                  For business owners and management teams
+                  </p>
+                </div>
+
+                <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
+                {/* Image Section */}
+              <div className="mt-6 md:hidden">
+                <div className="w-1/2 md:w-4/5 mx-auto">
+                  <Image
+                   src="/assets/Cufflink.jpg"
+                   alt="Cufflink"
+                   width={500}
+                   height={400}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+                <div className="mt-8 px-12 md:ml-24 md:max-w-[820px]">
+                <p className="text-base text-left font-light text-gray-500 leading-relaxed">
+                  <span className="font-semibold text-gray-600">
+                  Exigent Strategic Advisors
+                  </span>{" "}
+                  is a
               boutique consulting practice that combines the full power of our investment platform,
               in-house domain experts, and global relationship network.
-            </h1>
-            <h1 className="font-sans text-gray-600 font-light mt-4">
-              We provide a range of services that include:
-            </h1>
+                </p>
+                <p className="mt-6 text-base text-left text-gray-500">
+                  We provide a range of services that include:
+                </p>
+              </div>
+              </div>
+              
+              
+              {/* Image Section */}
+              <div className="hidden md:block md:col-span-2" >
+                <div className="md:w-full mx-auto">
+                  <Image
+                    src="/assets/Cufflink.jpg"
+                    alt="Cufflink"
+                    width={500}
+                    height={400}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              
+            </div>
+           
           </div>
         </div>
 
-        {/* Image Section */}
-        <div className='col-span-2'>
-          <Image
-            className="w-2/3 mx-auto"
-            src="/assets/Cufflink.jpg"
-            alt="Cufflink"
-            width={500}
-            height={400}
-          />
-        </div>
-      </div>
-
-      {/* Services Grid */}
-      <div className="grid grid-cols-3 max-w-[940px] divide-x-2 divide-slate-600 mx-auto mt-8 text-center align-top">
+        {/* Services Grid */}
+        <div className="mx-auto md:pl-24 md:grid md:grid-cols-3 md:max-w-6xl mt-8 text-center md:items-center md:space-y-0 md:gap-8 px-4 lg:px-0 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600  text-gray-900 md:border-r-2 md:border-slate-800">
         {[
           'Strategic Capital Formation',
           'Business Planning, Operational Strategy, Commercial Expansion',
           'Placement of Directors and Board Members',
         ].map((service, index) => (
-          <div key={index} className={lato.className}>
-            <h1 className="font-sans text-sm p-4">{service}</h1>
-          </div>
-        ))}
+            <div key={index} className={lato.className}>
+              <h1 className="text-sm font-sans md:text-sm py-4 px-4">
+                {service}
+              </h1>
+              <p className="border-b-2 border-slate-900 w-20 mx-auto md:border-0"></p>
+            </div>
+          ))}
+        </div>
       </div>
+      {/* Main Section */}
+    
 
       {/* Leadership Section */}
-      <div className="mt-16 text-center mx-auto justify-items-center">
+      <div className="mt-10 text-center mx-auto justify-items-center">
         <div className="mt-8 mb-12">
           <span className="hover:bg-red-500 hover:text-white font-sans font-normal text-base border-2 border-gray-400 py-1 rounded-full px-6">
             Contact Us
@@ -73,7 +108,7 @@ const Strategic = () => {
         <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
 
         {/* Leadership Profiles */}
-        <div className="max-w-3xl mt-8 flex justify-around">
+        <div className="max-w-3xl mt-8 mdLflex justify-around">
           {[
             {
               imgSrc: '/assets/team/Carter.png',

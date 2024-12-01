@@ -80,7 +80,7 @@ const Family = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="mx-auto md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:space-y-0 md:gap-8 px-4 lg:px-0 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600  text-gray-900 md:border-r-2 md:border-slate-800">
+        <div className="mx-auto md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:items-center md:space-y-0 md:gap-8 px-4 lg:px-0 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600  text-gray-900 md:border-r-2 md:border-slate-800">
           {[
             "Investment and Wealth Management",
             "Comprehensive Reporting",
