@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import BusinessSectionTwo from "./components/BusinessCardTwo";
 import MeetTheTeamTwo from "./components/MeetTheTeamTwo";
 import MeetTheTeamThree from "./components/MeetTheTeamThree";
+import { CarouselSize } from "./components/River";
 
 
 const PERSON_QUERY = `*[_type == "person" && order < 12] | order(order asc) | { _id,name,title, subtitle, description, image, slug, order }`;
@@ -83,7 +84,7 @@ export default async function Home() {
       {/* Leadership Section */}
       <div className="mt-36 text-center mx-auto max-w-5xl">
         <div className="justify-items-center mx-auto max-w-3xl">
-          <h3 className="max-w-[320px] text-xl font-semibold sm:max-w-[500px] sm:text-2xl  sm:px-8  md:text-2xl md:max-w-2xl lg:text-2xl xl:text-[26px] text-gray-500">
+          <h3 className="max-w-[320px] text-xl font-normal sm:max-w-[500px] sm:text-2xl  sm:px-8  md:text-xl md:max-w-xl lg:max-w-3xl lg:text-xl xl:text-[26px] text-gray-400">
             Exigent is a diversified financial services company with three
             distinct businesses.
           </h3>
@@ -94,6 +95,7 @@ export default async function Home() {
       <BusinessSectionTwo />
       {/* <MeetTheTeam persons={persons} /> */}
       <MeetTheTeamTwo persons={persons} />
+      {/* <CarouselSize persons={persons} /> */}
       {/* <MeetTheTeamThree persons={persons}/> */}
       <Investments />
       <StrategicAdvisors />
