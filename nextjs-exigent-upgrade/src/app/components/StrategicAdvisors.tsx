@@ -20,7 +20,7 @@ const StrategicAdvisors = () => {
       </h3>
       <div className="redline justify-self-center mb-8 h-[3px] w-[120px] bg-red-500 rounded"></div>
 
-      <div className="mt-8 max-w-[300px] mx-auto md:max-w-3xl md:grid md:grid-cols-11 md:gap-4 lg:max-w-6xl">
+      <div className="mt-8 max-w-[300px] mx-auto md:max-w-3xl md:px-4 md:grid md:grid-cols-11 md:gap-4 lg:max-w-6xl">
         {/* Sir General Nick Carter */}
         <div className="my-6 md:my-0 md:col-span-4 border border-gray-300 px-2 h-[400px]">
           <div className={bodoni.className}>

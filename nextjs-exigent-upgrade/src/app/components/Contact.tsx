@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="mt-8 md:mt-0 text-left">
+        <div className="mt-8 md:mt-1 text-left">
           <div>
             <p className="text-base">Israel 972-2-500-9450</p>
             <p className="mb-8 text-base">US 1-646-506-9450</p>
