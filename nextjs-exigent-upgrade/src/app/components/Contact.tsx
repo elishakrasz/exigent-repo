@@ -36,10 +36,10 @@ const Contact = () => {
         </div>
 
         {/* Social and Contact Icons */}
-        <div className="pb-24 flex space-x-3">
+        <div className="pb-24 flex space-x-1">
           <Link
             href="https://www.linkedin.com/company/exigentcapitalgroup/"
-            className="mr-4 group relative"
+            className="mr-3 group relative"
             target="_blank"
           >
             <Image
@@ -59,7 +59,7 @@ const Contact = () => {
           </Link>
           <Link
             href="mailto:info@exigentcapitalgroup.com"
-            className="mr-4 group relative"
+            className="mr-3 group relative"
           >
             <Image
               src="/assets/Email.png"
@@ -78,7 +78,7 @@ const Contact = () => {
           </Link>
           <Link
             href="tel:info@exigentcapitalgroup.com"
-            className="mr-4 group relative"
+            className="mr-3 group relative"
           >
             <Image
               src="/assets/Phone Icon.png"
@@ -97,7 +97,7 @@ const Contact = () => {
           </Link>
           <Link
             href="mailto:info@exigentcapitalgroup.com"
-            className="mr-4 group relative"
+            className="mr-3 group relative"
           >
             <Image
               src="/assets/Location Icon.png"

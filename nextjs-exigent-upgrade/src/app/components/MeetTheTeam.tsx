@@ -59,7 +59,7 @@ export default function MeetTheTeam({ persons }: { persons: any }) {
             {persons.map((person, index) => (
               <div
                 key={index}
-                className="flex-none w-1/4 px-2"
+                className="flex-none w-1/4"
                 style={{ minWidth: '25%' }} // Ensures 4 cards fit exactly
               >
                 <Link href={`team/${person.slug.current}`} key={index} className="">

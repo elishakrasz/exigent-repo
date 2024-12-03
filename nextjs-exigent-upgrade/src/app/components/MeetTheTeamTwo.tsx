@@ -25,7 +25,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
   const updateVisibleCards = () => {
     if (window.innerWidth >= 1280) setVisibleCards(4); // Large screens
     else if (window.innerWidth >= 1024) setVisibleCards(3); // Desktop
-    else if (window.innerWidth >= 668) setVisibleCards(2); // Tablet
+    else if (window.innerWidth >= 768) setVisibleCards(2); // Tablet
     else setVisibleCards(1); // Mobile
   };
 
@@ -48,13 +48,13 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
   };
 
   return (
-    <div className="mt-32 text-center mx-auto max-w-7xl px-4">
+    <div className="mt-32 text-center mx-auto max-w-[390px] md:max-w-[670px]  lg:max-w-[940px] xl:max-w-[1220px] px-4">
       <h3 className="text-3xl mb-4 md:text-4xl">Meet the Team</h3>
       <div className="redline mb-8 h-[3px] w-[120px] bg-red-500 rounded mx-auto"></div>
-      <div className="relative overflow-hidden">
+      <div className="relative px-6">
         {/* Button: Previous */}
         <button
-          className="absolute left-[2px] top-1/2 transform -translate-y-1/2 text-black z-10p-2"
+          className="absolute left-[6px] lg:left-[-6px] top-1/2 transform -translate-y-1/2 z-10p-2"
           onClick={handlePrev}
         >
           <Image
@@ -82,7 +82,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
                 }}
               >
                 <Link href={`team/${person.slug.current}`}>
-                  <div className="border border-gray-300 h-[350px] w-[275px] px-4 mx-auto">
+                  <div className="border border-gray-300 h-[350px] w-[275px] px-2 mx-auto">
                     <div className={bodoni.className}>
                       <div className="mt-10 w-full flex justify-center">
                         <Image
@@ -112,7 +112,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
 
         {/* Button: Next */}
         <button
-          className="absolute right-[-2px] top-1/2 transform -translate-y-1/2 text-black z-10 p-2"
+          className="absolute right-[0px] md:right-[-12px] top-1/2 transform -translate-y-1/2 text-black z-10 p-2"
           onClick={handleNext}
         >
           <Image

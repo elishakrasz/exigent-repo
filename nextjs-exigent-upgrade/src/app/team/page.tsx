@@ -30,14 +30,14 @@ export default async function Team() {
   return (
     <div className="mt-8 text-center mx-auto max-w-7xl">
       <div className="mx-auto max-w-3xl">
-        <h3 className="text-2xl mx-10 md:text-3xl font-semibold text-gray-700">
+        <h3 className="text-2xl mx-10 md:text-2xl font-semibold text-gray-700">
           An Experienced and Dedicated Team at Your Service
         </h3>
         <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
       </div>
 
       {/* Main Team */}
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid md:grid-cols-4 md:gap-2 mx-auto max-w-6xl">
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid md:grid-cols-4  mx-auto max-w-6xl">
         {persons.map((person) => (
           <a href={`/team/${person.slug.current}`} key={person._id} className="block pb-4">
           {/* <Link href={`/team/${person.slug}`} key={person._id} className="block"> */}
@@ -58,6 +58,7 @@ export default async function Team() {
                 </div>
               </div>
             </div>
+            {/* <div className='h-36 w-full mx-16 bg-blue-600 grid grid-cols-1 sm:grid-cols-2 md:grid md:grid-cols-4'></div> */}
           </a>
         ))}
       </div>
