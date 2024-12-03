@@ -107,28 +107,23 @@ export default async function Page({ params }) {
   return (
     <div className="max-w-7xl max-auto justify-items-center mt-16">
       <div className="max-w-3xl">
-        <h3 className="text-2xl mx-10 font-semibold text-gray-700">
+        <h3 className="text-2xl mx-10 normal text-gray-700">
           An Experienced and Dedicated Team at Your Service
         </h3>
         <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
       </div>
      {/* Grid Section */}
 <div className="mt-8 max-auto items-center justify-items-center">
-  <div className="grid grid-cols-4 gap-4 max-w-4xl mx-auto">
+  <div className="grid grid-cols-4 gap-4 max-w-3xl mx-auto px-14">
     {/* Left Column */}
     <div className="mx-auto text-center col-span-1">
       <div>
         <Image
-          // src={urlForImage(person.image).quality(100).url()}
-          // alt={person.name}
-          // fill
-          // className="rounded-full object-cover"
-
           src={urlForImage(person.image).quality(100).url()}
           alt={person.name}
           width={100}
           height={100}
-          className="rounded-full w-[125%]"
+          className="rounded-full w-full"
         />
       </div>
       <div>
@@ -154,7 +149,7 @@ export default async function Page({ params }) {
     </div>
 
     {/* Right Column */}
-    <div className="col-span-3 max-w-[80%]">
+    <div className="col-span-3 max-w-full">
       {/* Render description using PortableText */}
       <div className="mt-2">
         {person.description?.map((block, index) => (

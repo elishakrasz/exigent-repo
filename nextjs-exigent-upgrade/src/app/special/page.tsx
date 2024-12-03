@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Lato } from "next/font/google";
 import Investments from "../components/Investments";
+import Link from "next/link";
+
 
 const lato = Lato({
   weight: ["300", "700"],
@@ -36,13 +38,13 @@ const Special = () => {
                   alt="Ship"
                   width={350}
                   height={250}
-                  className="w-1/2 md:w-2/3 mx-auto object-contain"
+                  className="w-2/3 md:w-2/3 mx-auto object-contain"
                 />
               </div>
 
               {/* Description Section */}
-              <div className="mt-8 px-12 md:ml-24 md:max-w-[820px]">
-                <p className="text-base font-light md:text-[14px] text-gray-500 leading-relaxed">
+              <div className="px-12 mt-10 md:px-12 md:ml-24 md:max-w-[820px]">
+                <p className="text-[14px] font-light md:text-sm md:leading-3 text-gray-500">
                   <span className="font-semibold text-gray-600">
                     Exigent Capital Group
                   </span>{" "}
@@ -51,15 +53,15 @@ const Special = () => {
                   strategic relationships to deliver timely and thematic
                   investment products to a global investor base.
                 </p>
-                <p className="mt-6 text-base  md:text-[14px] text-gray-500">
+                <p className="text-sm mt-6 md:text-base  md:text-[14px] text-gray-500">
                   We provide a range of services that include:
                 </p>
               </div>
             </div>
 
             {/* Image Section for Larger Screens */}
-            <div className="hidden md:block mt-6 md:col-span-2">
-              <div className="w-2/3 md:w-full mx-auto">
+            <div className="hidden md:block mt-6 md:mt-0 md:col-span-2">
+              <div className="w-2/3 mx-auto">
                 <Image
                   src="/assets/ShipA.jpg"
                   alt="Ship"
@@ -74,7 +76,8 @@ const Special = () => {
       </div>
 
       {/* Services Grid */}
-      <div className="text-center md:max-w-4xl md:grid md:grid-cols-3 md:gap-6 mt-4 px-4 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
+      <div className="pl-8 mt-4">
+      <div className="text-center md:max-w-[800px] md:grid md:grid-cols-3  md:gap-0 md:mt-0 px-2 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
   {[
     "Secondaries, GP Stakes, Growth Equity and Real Estate",
     "Structured as Single-Asset SPVs, Funds and Co-Investment Vehicles",
@@ -82,26 +85,29 @@ const Special = () => {
   ].map((service, index) => (
     <div
       key={index}
-      className={`${lato.className} flex flex-col justify-center items-center py-4 h-full`}
+      className={`${lato.className} flex flex-col justify-center items-center py-4 h-4`}
     >
-      <h1 className="font-sans text-sm px-4">{service}</h1>
+      <h1 className="font-sans text-sm md:text-xs px-6 align-top">{service}</h1>
     </div>
   ))}
 </div>
+      </div>
+      
 
 
       {/* Investments Section */}
       <div className="text-center px-4 lg:px-0 mx-auto max-w-[90%] lg:max-w-6xl">
-        <div className="mt-8 mb-12">
-          <span className="hover:bg-[#F90002] hover:text-white font-sans font-normal text-base border-2 border-gray-400 py-2 px-6 rounded-full">
-            Contact Us
-          </span>
-        </div>
+      <Link
+          href="/contact"
+          className="text-sm inline-block mt-4 md:mt-8 hover:bg-[#F5101E] hover:text-white font-sans font-normal md:text-sm border-2 border-gray-400 py-1 rounded-full px-6"
+        >
+          Contact Us
+        </Link>
         <Investments />
 
         {/* Disclaimer */}
         <div className={`${lato.className} mt-12`}>
-          <h1 className="py-12 italic font-light text-gray-400 text-sm">
+          <h1 className="py-12 italic font-light text-gray-400 text-xs">
             Services provided by Exigent Family Office Ltd. (Israel) in
             conjunction with professional third parties.
           </h1>

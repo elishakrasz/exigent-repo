@@ -35,7 +35,7 @@ const Family = () => {
                 <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
                 {/* Image Section */}
               <div className="mt-6 md:hidden">
-                <div className="w-2/3 md:w-4/5 mx-auto">
+                <div className="w-2/3 md:w-4/5 mx-auto text-center">
                   <Image
                     src="/assets/Birds.png"
                     alt="Map"
@@ -46,7 +46,7 @@ const Family = () => {
                 </div>
               </div>
                 <div className="mt-8 px-12 md:ml-24 md:max-w-[820px]">
-                <p className="text-base font-light text-gray-500 leading-relaxed">
+                <p className="md:text-base font-light text-gray-500 leading-relaxed">
                   <span className="font-semibold text-gray-600">
                     Exigent Family Office
                   </span>{" "}
@@ -83,7 +83,7 @@ const Family = () => {
       </div>
 
 {/* Services Grid */}
-<div className="mx-auto md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:items-center md:gap-0 px-4 md:px-0 lg:px-0 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
+<div className="mx-auto md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:items-center md:gap-0 px-4 md:px-0 lg:max-w-5xl lg:px-16 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
   {[
     "Investment and Wealth Management",
     "Comprehensive Reporting",
@@ -94,11 +94,9 @@ const Family = () => {
   ].map((service, index) => (
     <div
       key={index}
-      className={`${lato.className} py-4 px-4 ${
-        index === 5 ? "md:after:hidden" : ""
-      }`}
+      className={`${lato.className} flex flex-col justify-center items-center py-4 h-4`}
     >
-      <h1 className="text-sm font-sans md:text-sm">{service}</h1>
+      <h1 className="font-sans text-sm md:text-xs px-2 align-top">{service}</h1>
     </div>
   ))}
 </div>

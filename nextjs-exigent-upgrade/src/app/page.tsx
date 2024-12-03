@@ -31,7 +31,7 @@ export default async function Home() {
       <div className="fixed inset-0 bg-white z-[999999] animate-[backgroundanimation_9.5s_ease-in-out_forwards]"></div>
 
       {/* Gradient Overlay */}
-      <div className="relative">
+      <div className="container relative">
         <div className="w-full max-w-[1200px] mx-auto">
           <div className="relative z-[9999999] animate-[backgroundanimation_9.5s_cubic-bezier(0.5,0,0,1)_forwards]">
             {/* Rotating Logo X */}

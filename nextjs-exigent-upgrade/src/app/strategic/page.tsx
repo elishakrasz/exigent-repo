@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Bodoni_Moda, Lato } from 'next/font/google';
+import Link from 'next/link';
 
 const bodoni = Bodoni_Moda({
   subsets: ['latin'],
@@ -34,7 +35,7 @@ const Strategic = () => {
 
               {/* Image Section for Small Screens */}
               <div className="mt-6 md:hidden">
-                <div className="w-1/2 md:w-4/5 mx-auto">
+                <div className="w-1/3 mx-auto">
                   <Image
                     src="/assets/Cufflink.jpg"
                     alt="Cufflink"
@@ -46,15 +47,15 @@ const Strategic = () => {
               </div>
 
               {/* Description */}
-              <div className="mt-8 px-12 md:ml-24 md:max-w-[820px]">
-                <p className="text-base text-left font-light text-gray-500 leading-relaxed">
+              <div className="mt-8 px-12 md:max-w-[820px] md:ml-16">
+                <p className="text-[14px] text-left font-light text-gray-500 leading-5">
                   <span className="font-semibold text-gray-600">
                     Exigent Strategic Advisors
                   </span>{' '}
                   is a boutique consulting practice that combines the full power of our investment platform,
                   in-house domain experts, and global relationship network.
                 </p>
-                <p className="mt-6 text-base text-left text-gray-500">
+                <p className="mt-2 text-[14px] text-left text-gray-500">
                   We provide a range of services that include:
                 </p>
               </div>
@@ -62,13 +63,13 @@ const Strategic = () => {
 
             {/* Image Section for Medium and Larger Screens */}
             <div className="hidden md:block md:col-span-2">
-              <div className="md:w-full mx-auto">
+              <div className="w-2/3 md:w-[250px] lg:w-[250px]">
                 <Image
                   src="/assets/Cufflink.jpg"
                   alt="Cufflink"
-                  width={500}
-                  height={400}
-                  className="object-contain"
+                  width={300}
+                  height={200}
+                  className=""
                 />
               </div>
             </div>
@@ -76,36 +77,43 @@ const Strategic = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="text-center md:max-w-4xl md:grid md:grid-cols-3 md:gap-6 mt-8 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900 md:align-top">
+        <div className="mt-8 text-center md:max-w-[720px] md:grid md:grid-cols-3 md:pr-12 md:gap-0 md:mt-6 px-2 md:px-0 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
           {[
             'Strategic Capital Formation',
             'Business Planning, Operational Strategy, Commercial Expansion',
             'Placement of Directors and Board Members',
           ].map((service, index, arr) => (
+            // <div
+            //   key={index}
+            //   className={`${lato.className} flex flex-col justify-center items-center px-2 py-4 ${
+            //     index === arr.length - 1 ? 'md:border-0' : ''
+            //   }`}
+            // >
+            //   <h1 className="font-sans text-sm md:text-xs">{service}</h1>
+            // </div>
             <div
-              key={index}
-              className={`${lato.className} flex flex-col justify-center items-center px-6 py-4 ${
-                index === arr.length - 1 ? 'md:border-0' : ''
-              }`}
-            >
-              <h1 className="font-sans text-sm">{service}</h1>
-            </div>
+      key={index}
+      className={`${lato.className} flex flex-col justify-center items-center py-6 h-4 `}
+    >
+      <h1 className="font-sans text-sm md:text-xs px-6 align-top">{service}</h1>
+    </div>
           ))}
         </div>
       </div>
 
       {/* Leadership Section */}
-      <div className="mt-10 text-center mx-auto justify-items-center">
-        <div className="mt-8 mb-12">
-          <span className="hover:bg-red-500 hover:text-white font-sans font-normal text-base border-2 border-gray-400 py-1 rounded-full px-6">
-            Contact Us
-          </span>
-        </div>
-        <h3 className="text-4xl mb-4">Leadership Team</h3>
+      <div className="mt-6 text-center mx-auto justify-items-center">
+      <Link
+          href="/contact"
+          className="text-sm inline-block md:mt-8 hover:bg-[#F5101E] hover:text-white font-sans font-normal md:text-sm border-2 border-gray-400 py-1 rounded-full px-6"
+        >
+          Contact Us
+        </Link>
+        <h3 className="text-4xl mt-14 mb-4 md">Leadership Team</h3>
         <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
 
         {/* Leadership Profiles */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mt-8 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl md:mt-8 mx-auto">
           {[
             {
               imgSrc: '/assets/team/Carter.png',
@@ -122,7 +130,7 @@ const Strategic = () => {
           ].map((leader, index) => (
             <div key={index} className={`${bodoni.className} text-center`}>
               <Image
-                className="mt-10 w-3/5 object-contain mx-auto"
+                className="w-1/3 md:mt-10 md:w-1/2 object-contain mx-auto"
                 src={leader.imgSrc}
                 alt={leader.name}
                 width={200}
@@ -133,7 +141,7 @@ const Strategic = () => {
                 <p className="text-[18px] italic mt-2 text-gray-600">
                   {leader.title}
                 </p>
-                <p className="text-[18px] mb-12 text-gray-600">
+                <p className="text-[18px] mb-6 text-gray-600">
                   {leader.expertise}
                 </p>
               </div>
@@ -143,7 +151,7 @@ const Strategic = () => {
 
         {/* Disclaimer */}
         <div className={lato.className}>
-          <h1 className="py-32 italic font-light font-sans text-gray-400 text-sm">
+          <h1 className="py-32 italic font-light font-sans text-gray-400 text-xs">
             Services provided by Exigent Family Office Ltd. (Israel) in conjunction with professional third parties.
           </h1>
         </div>
