@@ -1,8 +1,8 @@
 // File: /home/elisha/dev/exigent_upgrade/nextjs-exigent-upgrade/src/app/page.tsx
-import * as entry from '../../../src/app/page.js'
+import * as entry from '../../../src/app/_page.jsx'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../src/app/page.js')
+type TEntry = typeof import('../../../src/app/_page.jsx')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

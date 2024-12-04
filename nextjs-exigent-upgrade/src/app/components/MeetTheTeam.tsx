@@ -63,7 +63,7 @@ export default function MeetTheTeam({ persons }: { persons: any }) {
                 style={{ minWidth: '25%' }} // Ensures 4 cards fit exactly
               >
                 <Link href={`team/${person.slug.current}`} key={index} className="">
-                  <div className="border border-gray-300 h-[350px] w-[250px]">
+                  <div className=" border-gray-300 h-[350px] w-[250px]">
                     <div className={bodoni.className}>
                       <div className="mt-10 w-3/5 mx-auto">
                         <Image

@@ -6,7 +6,7 @@ import Button from "./utilities/Button";
 
 const BusinessSectionTwo = () => {
   return (
-    <div className="text-center mx-auto max-w-[460px] mt-14 px-4 md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
+    <div className="text-center mx-auto max-w-[460px] mt-4 px-4 md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
       {/* Header Section */}
       {/* <div className="mb-16">
         <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-gray-700">

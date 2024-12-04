@@ -1,0 +1,76 @@
+.homepage .whitescreen {
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: backgroundanimation 7.5s forwards ease-in-out;
+  z-index: 999999;
+}
+
+@keyframes backgroundanimation {
+  0% {
+    background: white;
+    opacity: 1;
+    display: block;
+  }
+
+  60% {
+    background: white;
+    opacity: 1;
+    display: block;
+  }
+
+  75% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+.animation-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0%;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: backgroundanimation 7.5s forwards ease-in-out;
+  z-index: 999999;
+}
+
+@keyframes backgroundanimation {
+  0% {
+    background: white;
+    opacity: 1;
+    display: block;
+  }
+
+  60% {
+    background: white;
+    opacity: 1;
+    display: block;
+  }
+
+  75% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}

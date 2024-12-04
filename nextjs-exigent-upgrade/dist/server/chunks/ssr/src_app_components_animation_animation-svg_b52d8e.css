@@ -1,0 +1,78 @@
+/* [project]/src/app/components/animation/animation-svg.css [app-client] (css) */
+.homepage .whitescreen {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: 7.5s ease-in-out forwards backgroundanimation;
+  z-index: 999999;
+}
+
+@keyframes backgroundanimation {
+  0% {
+    background: #fff;
+    opacity: 1;
+    display: block;
+  }
+
+  60% {
+    background: #fff;
+    opacity: 1;
+    display: block;
+  }
+
+  75% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+.animation-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 7.5s ease-in-out forwards backgroundanimation;
+  z-index: 999999;
+}
+
+@keyframes backgroundanimation {
+  0% {
+    background: #fff;
+    opacity: 1;
+    display: block;
+  }
+
+  60% {
+    background: #fff;
+    opacity: 1;
+    display: block;
+  }
+
+  75% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
+/*# sourceMappingURL=src_app_components_animation_animation-svg_b52d8e.css.map*/

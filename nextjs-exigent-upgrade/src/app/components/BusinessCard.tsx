@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BusinessCard = () => {
   return (
-    <div className="px-8 max-w-[380px] sm-max-w-[480px] md:max-w-[840px] lg:max-w-[920px] xl:max-w-[10060] mt-12 mx-auto text-center grid grid-cols-1 lg:grid-cols-3 lg:gap-2">
+    <div className="px-8 max-w-[380px] sm-max-w-[480px] md:max-w-[840px] lg:max-w-[920px] xl:max-w-[10060] mt-4 mx-auto text-center grid grid-cols-1 lg:grid-cols-3 lg:gap-2">
       {/* Family Office Section */}
       <div className="" >
         <h1 className="text-4xl font-semibold">Family Office</h1>
