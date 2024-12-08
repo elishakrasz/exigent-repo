@@ -77,7 +77,7 @@ const Strategic = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="mt-8 text-center md:max-w-[720px] md:grid md:grid-cols-3 md:pr-12 md:gap-0 md:mt-6 px-2 md:px-0 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
+        <div className="mt-8 text-center md:max-w-[660px] md:grid md:grid-cols-3 md:pr-12 md:gap-0 md:mt-6 px-2 md:px-0 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
           {[
             'Strategic Capital Formation',
             'Business Planning, Operational Strategy, Commercial Expansion',
@@ -93,9 +93,9 @@ const Strategic = () => {
             // </div>
             <div
       key={index}
-      className={`${lato.className} flex flex-col justify-center items-center py-6 h-4 `}
+      className={`${lato.className} flex flex-col justify-center items-center py-6 h-4`}
     >
-      <h1 className="font-sans text-sm md:text-xs px-6 align-top">{service}</h1>
+      <h1 className="font-sans text-sm md:text-[12px] px-6 align-top">{service}</h1>
     </div>
           ))}
         </div>
@@ -113,7 +113,7 @@ const Strategic = () => {
         <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
 
         {/* Leadership Profiles */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl md:mt-8 mx-auto">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl md:mt-8 mx-auto">
           {[
             {
               imgSrc: '/assets/team/Carter.png',

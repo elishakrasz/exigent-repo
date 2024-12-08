@@ -227,7 +227,7 @@ const Strategic = ()=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-8 text-center md:max-w-[720px] md:grid md:grid-cols-3 md:pr-12 md:gap-0 md:mt-6 px-2 md:px-0 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900",
+                        className: "mt-8 text-center md:max-w-[660px] md:grid md:grid-cols-3 md:pr-12 md:gap-0 md:mt-6 px-2 md:px-0 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900",
                         children: [
                             'Strategic Capital Formation',
                             'Business Planning, Operational Strategy, Commercial Expansion',
@@ -241,9 +241,9 @@ const Strategic = ()=>{
                             //   <h1 className="font-sans text-sm md:text-xs">{service}</h1>
                             // </div>
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$lato_2554b613$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} flex flex-col justify-center items-center py-6 h-4 `,
+                                className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$lato_2554b613$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} flex flex-col justify-center items-center py-6 h-4`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "font-sans text-sm md:text-xs px-6 align-top",
+                                    className: "font-sans text-sm md:text-[12px] px-6 align-top",
                                     children: service
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/strategic/page.tsx",
@@ -294,7 +294,7 @@ const Strategic = ()=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl md:mt-8 mx-auto",
+                        className: "mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl md:mt-8 mx-auto",
                         children: [
                             {
                                 imgSrc: '/assets/team/Carter.png',

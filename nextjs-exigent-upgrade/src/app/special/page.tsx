@@ -44,7 +44,7 @@ const Special = () => {
 
               {/* Description Section */}
               <div className="mt-8 px-12 md:ml-24 md:max-w-[820px]">
-                <p className="md:text-sm font-light text-gray-500 leading-relaxed">
+                <p className="text-sm md:text-sm font-light text-gray-500 leading-relaxed">
                   <span className="font-semibold text-gray-600">
                   Exigent Capital Group
                   </span>{" "}
@@ -53,7 +53,7 @@ const Special = () => {
                   strategic relationships to deliver timely and thematic
                   investment products to a global investor base.
                 </p>
-                <p className="mt-6 text-base text-gray-500">
+                <p className="mt-6 text-sm text-gray-500">
                   We provide a range of services that include:
                 </p>
               </div>

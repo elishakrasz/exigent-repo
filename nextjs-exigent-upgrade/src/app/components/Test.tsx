@@ -46,14 +46,15 @@ const CustomPortableText = ({ value }: { value: any }) => {
 };
 
 const Test = ({person}) => {
+  console.log('p', person)
     return (       
       <div className="mt-8 max-auto items-center justify-items-center">
-      <div className="grid grid-cols-5 max-w-3xl mx-auto px-14">
+      <div className="grid grid-cols-1 md:grid-cols-5 max-w-3xl mx-auto px-14">
         {/* Left Column */}
         <div className="mx-auto text-center col-span-2">
           <div className="w-full mx-auto">
             <div className={bodoni.className}>
-              <div className="w-full flex justify-center">
+              <div className="w-full md:flex justify-center">
                 <Image
                   src={urlForImage(person.image).quality(100).url()}
                   alt={person.name}
@@ -64,10 +65,10 @@ const Test = ({person}) => {
               </div>
               <p className="text-xl font-normal mt-2">{person.name}</p>
               <div className={lato.className}>
-                <p className="text-[14px] italic  text-gray-600 mt-1">
+                <p className="text-[14px] italic  text-gray-600 mt-2">
                   {person.title}
                 </p>
-                <p className="text-xs my-2 text-gray-600">
+                <p className="text-[14px] my-2 text-gray-600">
                   {person.subtitle}
                 </p>
                 <div className="flex items-center justify-center my-2 px-6">

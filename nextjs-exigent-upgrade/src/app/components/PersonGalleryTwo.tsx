@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useSearchParams } from 'next/navigation';
+
 import Image from 'next/image';
-import { urlForImage } from '../sanity/client';
 import { Bodoni_Moda, Lato } from 'next/font/google';
 import Test from './Test';
 
@@ -22,15 +22,11 @@ export default function PersonGalleryTwo({ persons }: { persons: any[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(1);
 
-  const [isClient, setIsClient] = useState(false);
-  const router = isClient ? useRouter() : null;
-  const { slug } = router?.query || {};
+  const searchParams = useSearchParams();
+  const slugTwo = searchParams.get('slug'); // Retrieve slug from query parameters
 
-  
-
-//   const router = useRouter();
-//   const { slug } = router.query; // Extract slug from query parameter
-
+  console.log('slugTwo:', slugTwo); // Debugging log for slugTwo
+  console.log('persons:', persons); // Debugging log for persons
 
   // Update visible cards based on screen size
   const updateVisibleCards = () => {
@@ -47,29 +43,32 @@ export default function PersonGalleryTwo({ persons }: { persons: any[] }) {
   }, []);
 
   useEffect(() => {
-    if (slug) {
+    if (slugTwo && persons.length > 0) {
       // Find the index of the team member based on the slug
-      const index = persons.findIndex((person) => person.slug.current === slug);
+      const index = persons.findIndex((person) => person.slug.current === slugTwo);
+      console.log('Matching index:', index); // Debugging log for index
       if (index !== -1) {
         setCurrentIndex(index);
+      } else {
+        console.warn('Slug not found in persons:', slugTwo); // Warning for unmatched slug
       }
     }
-  }, [slug, persons]);
-  
+  }, [slugTwo, persons]);
+
   const handlePrev = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? Math.max(0, persons.length - visibleCards) : prev - 1
+      prev === 0 ? persons.length - 1 : prev - 1
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prev) =>
-      prev >= Math.max(0, persons.length - visibleCards) ? 0 : prev + 1
+      prev === persons.length - 1 ? 0 : prev + 1
     );
   };
 
   return (
-    <div className="mt-8  mx-auto max-w-[460px] md:max-w-[780px]  lg:max-w-[940px] xl:max-w-[1220px]">
+    <div className="mt-8 mx-auto max-w-[460px] md:max-w-[780px] lg:max-w-[940px] xl:max-w-[1220px]">
       <div className="relative px-6">
         <button
           className="absolute left-[16px] md:left-[86px] lg:left-[132px] top-1/2 transform -translate-y-1/2 z-20"
@@ -83,20 +82,6 @@ export default function PersonGalleryTwo({ persons }: { persons: any[] }) {
           />
         </button>
 
-         {/* Button: Previous */}
-         {/* <button
-          className="absolute left-[9px] md:left-[2px] lg:left-[-2px] top-1/2 transform -translate-y-1/2 z-10p-2"
-          onClick={handlePrev}
-        >
-          <Image
-            src="/assets/arrow_left.png"
-            alt="Previous Arrow"
-            width={24}
-            height={24}
-          />
-        </button> */}
-
-        {/* Carousel Track */}
         <div className="overflow-hidden">
           <div
             className="flex transition-transform duration-500 gap-1"
@@ -112,16 +97,14 @@ export default function PersonGalleryTwo({ persons }: { persons: any[] }) {
                   width: `calc(${100 / 1}% - 3px)`,
                 }}
               >
-                <Test person={persons[currentIndex]} />
-           
+                <Test person={person} />
               </div>
             ))}
           </div>
         </div>
 
-        {/* Button: Next */}
         <button
-          className="absolute right-[0px] md:right-[36px] lg:right-[92px]  xl:right-[-10px]  top-1/2 transform -translate-y-1/2 text-black z-10 p-2"
+          className="absolute right-[0px] md:right-[36px] lg:right-[92px] xl:right-[-10px] top-1/2 transform -translate-y-1/2 text-black z-10 p-2"
           onClick={handleNext}
         >
           <Image
@@ -135,4 +118,3 @@ export default function PersonGalleryTwo({ persons }: { persons: any[] }) {
     </div>
   );
 }
-

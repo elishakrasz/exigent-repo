@@ -52,7 +52,7 @@ export default async function Team() {
       {/* Main Team */}
       <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid md:grid-cols-4  mx-auto max-w-6xl px-12">
         {persons.map((person) => (
-          <a href={`/team/${person.slug.current}`} key={person._id} className="block pb-4">
+          <a href={`/team?slug=${person.slug.current}`} key={person._id} className="block pb-4">
           {/* <Link href={`/team/${person.slug}`} key={person._id} className="block"> */}
             <div className="px-4 text-center mb-4">
               <div className={bodoni.className}>

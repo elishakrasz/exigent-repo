@@ -23,16 +23,17 @@ const Family = () => {
           <div className="">
             <div className="md:grid md:grid-cols-6 mt-8">
               <div className="md:col-span-4">
-                <div className="md:text-5xl text-center font-semibold leading-10">
-                  <h3 className="text-3xl sm:text-4xl md:font-normal">
+                <div className="md:text-5xl md:text-center font-semibold leading-10">
+                  <h3 className="text-3xl sm:text-4xl md:font-normal md:text-5xl">
                     Family Office
                   </h3>
-                  <p className="text-base md:text-lg font-light mt-2 text-gray-500 leading-relaxed">
+                  <p className="text-base md:text-base font-light mt-2 text-gray-500 leading-relaxed">
                     For high-net-worth families
                   </p>
+                  <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
                 </div>
 
-                <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
+                
                 {/* Image Section */}
               <div className="mt-6 md:hidden">
                 <div className="w-2/3 md:w-4/5 mx-auto text-center">
@@ -45,15 +46,15 @@ const Family = () => {
                   />
                 </div>
               </div>
-                <div className="mt-8 px-12 md:ml-24 md:max-w-[820px]">
-                <p className="md:text-base font-light text-gray-500 leading-relaxed">
+                <div className="mt-8 px-12 md:ml-[20%] md:max-w-[820px]">
+                <p className="text-sm md:text-sm font-light text-gray-500 leading-relaxed">
                   <span className="font-semibold text-gray-600">
                     Exigent Family Office
                   </span>{" "}
                   is purpose-built for families who are seeking to create a
                   stronger alignment between their capital and their values.
                 </p>
-                <p className="mt-6 text-base text-gray-500">
+                <p className="mt-6 text-sm text-gray-500">
                   We provide a range of services that include:
                 </p>
               </div>
@@ -83,7 +84,7 @@ const Family = () => {
       </div>
 
 {/* Services Grid */}
-<div className="mx-auto md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:items-center md:gap-0 px-4 md:px-0 lg:max-w-5xl lg:px-16 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
+<div className="mx-auto  md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:align-top md:gap-0 px-2 md:px-0 lg:max-w-5xl lg:px-8 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
   {[
     "Investment and Wealth Management",
     "Comprehensive Reporting",
@@ -94,9 +95,9 @@ const Family = () => {
   ].map((service, index) => (
     <div
       key={index}
-      className={`${lato.className} flex flex-col justify-center items-center py-4 h-4`}
+      className={`${lato.className} flex flex-col justify-center items-center my-4 h-6`}
     >
-      <h1 className="font-sans text-sm md:text-xs px-2 align-top">{service}</h1>
+      <h1 className="font-sans text-sm md:text-xs px-2 md:align-top"> {service}</h1>
     </div>
   ))}
 </div>
