@@ -54,7 +54,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
       <div className="relative px-6">
         {/* Button: Previous */}
         <button
-          className="absolute left-[2px] lg:left-[-6px] top-1/2 transform -translate-y-1/2 z-10p-2"
+          className="absolute left-[9px] md:left-[2px] lg:left-[-2px] top-1/2 transform -translate-y-1/2 z-10p-2"
           onClick={handlePrev}
         >
           <Image
@@ -81,7 +81,8 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
                   width: `calc(${100 / visibleCards}% - 3px)`,
                 }}
               >
-                <Link href={`team/${person.slug.current}`}>
+                {/* <Link href={`team/${person.slug.current}`}> */}
+                <Link href={`/team?slug=${person.slug.current}`}>
                   <div className="border border-gray-300 h-[350px] w-[275px] px-2 mx-auto hover:border-l-4 hover:border-l-[#F5101E]">
                     <div className={bodoni.className}>
                       <div className="mt-10 w-full flex justify-center">
@@ -112,7 +113,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
 
         {/* Button: Next */}
         <button
-          className="absolute right-[0px] md:right-[-4px] top-1/2 transform -translate-y-1/2 text-black z-10 p-2"
+          className="absolute right-[0px] md:right-[-4px] lg:right-[-10px] xl:right-[-10px]  top-1/2 transform -translate-y-1/2 text-black z-10 p-2"
           onClick={handleNext}
         >
           <Image

@@ -26,7 +26,7 @@ const Strategic = () => {
                 <h3 className="text-3xl sm:text-4xl md:font-normal">
                   Strategic Advisory
                 </h3>
-                <p className="text-base md:text-lg font-light mt-2 text-gray-500 leading-relaxed">
+                <p className="text-base md:text-sm font-light mt-2 text-gray-500 leading-relaxed">
                   For business owners and management teams
                 </p>
               </div>

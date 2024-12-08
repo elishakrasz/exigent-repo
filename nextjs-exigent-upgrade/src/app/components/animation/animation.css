@@ -313,8 +313,18 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 50vw;
+  width: 35vw;
 }
+
+/* .animation-txtlogo img {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+} */
 
 @keyframes animation-8 {
   0% {

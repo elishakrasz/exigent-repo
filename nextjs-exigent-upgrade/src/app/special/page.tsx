@@ -21,10 +21,10 @@ const Special = () => {
           <div className="md:grid md:grid-cols-6 mt-8">
             <div className="md:col-span-4">
               <div className="md:text-5xl text-center font-semibold leading-10">
-                <h3 className="text-3xl sm:text-4xl md:text-3xl md:font-normal">
+                <h3 className="text-3xl sm:text-4xl md:text-4xl md:font-normal">
                   Special Situation Investing
                 </h3>
-                <p className="text-base md:text-base font-light mt-2 text-gray-500 leading-relaxed">
+                <p className="text-base md:text-sm font-light mt-2 text-gray-500 leading-relaxed">
                   For qualified investors
                 </p>
               </div>
@@ -43,17 +43,17 @@ const Special = () => {
               </div>
 
               {/* Description Section */}
-              <div className="px-12 mt-10 md:px-12 md:ml-24 md:max-w-[820px]">
-                <p className="text-[14px] font-light md:text-sm md:leading-3 text-gray-500">
+              <div className="mt-8 px-12 md:ml-24 md:max-w-[820px]">
+                <p className="md:text-sm font-light text-gray-500 leading-relaxed">
                   <span className="font-semibold text-gray-600">
-                    Exigent Capital Group
+                  Exigent Capital Group
                   </span>{" "}
                   leverages a proprietary investment pipeline, strong
                   underwriting capabilities, and a world-class network of
                   strategic relationships to deliver timely and thematic
                   investment products to a global investor base.
                 </p>
-                <p className="text-sm mt-6 md:text-base  md:text-[14px] text-gray-500">
+                <p className="mt-6 text-base text-gray-500">
                   We provide a range of services that include:
                 </p>
               </div>
@@ -76,7 +76,7 @@ const Special = () => {
       </div>
 
       {/* Services Grid */}
-      <div className="pl-8 mt-4">
+      <div className="pl-8 mt-4 md:mt-10">
       <div className="text-center md:max-w-[800px] md:grid md:grid-cols-3  md:gap-0 md:mt-0 px-2 lg:px-0 lg:ml-20 mx-auto divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
   {[
     "Secondaries, GP Stakes, Growth Equity and Real Estate",

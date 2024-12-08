@@ -26,7 +26,10 @@ export default async function Home() {
   return (
     <div>
       {/* White Screen Animation */}
+      
       <Animate />
+    
+     
       {/* Leadership Section */}
       <div className="mt-16 text-center mx-auto max-w-5xl">
         {/* <div className="justify-items-center mx-auto max-w-3xl">

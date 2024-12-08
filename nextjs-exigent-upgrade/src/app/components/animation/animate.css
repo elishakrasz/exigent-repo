@@ -160,7 +160,7 @@
     position: fixed;
     top: 40vh;
     bottom: 0;
-    left: 0;
+    left: -12vw;
     right: 0%;
     z-index: 9999999;
     animation: backgroundanimation 7.5s forwards cubic-bezier(0.5, 0, 0, 1);
@@ -185,7 +185,7 @@
   
   .animation-wrap p {
     position: absolute;
-    left: 41.8vw;
+    left: 47.8vw;
     right: auto;
     text-transform: uppercase;
     color: #999999;
@@ -198,7 +198,7 @@
   
   .animation-txtx img {
     width: 5vw;
-    left: 36.0vw;
+    left: 41.8vw;
     position: absolute;
     top: 1vw;
     right: auto;
@@ -240,6 +240,7 @@
       transform: rotateZ(450deg);
     }
   }
+
   
   .animation-e {
     position: absolute;

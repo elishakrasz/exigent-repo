@@ -3,6 +3,19 @@ import { PortableText, type SanityDocument } from 'next-sanity';
 import { client, urlForImage } from '../../sanity/client';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import { Bodoni_Moda, Lato } from 'next/font/google';
+import Link from 'next/link';
+
+const bodoni = Bodoni_Moda({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const lato = Lato({
+  weight: ['300', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+});
 
 const PERSON_QUERY = `*[_type == "person" && slug.current == $slug][0] | {
   _id, name, title, subtitle, description, image, slug, order,
@@ -18,6 +31,19 @@ const PERSON_QUERY = `*[_type == "person" && slug.current == $slug][0] | {
     }
   }
 }`;
+
+const PERSON_GALLERY_QUERY = `*[_type == "person" && slug.current == $slug][0] | {
+  _id, name, title, subtitle, description, image, slug, order,
+  gallery[]{
+      asset->{
+        _id,
+        url
+      },
+      caption
+    }
+}`;
+
+
 
 const SLUGS_QUERY = `
 *[_type == "person"]{
@@ -36,7 +62,7 @@ export async function generateStaticParams() {
 
 // Fetch the data for the specific person based on the slug
 async function fetchPersonData(slug: string) {
-  const person = await client.fetch<SanityDocument>(PERSON_QUERY, { slug });
+  const person = await client.fetch<SanityDocument>(PERSON_GALLERY_QUERY, { slug });
   console.log('person', person);
   return person;
 }
@@ -70,27 +96,6 @@ const CustomPortableText = ({ value }: { value: any }) => {
   );
 };
 
-// ImageGallery component for rendering image galleries
-// const ImageGallery = ({ images, caption }: { images: { url: string; alt?: string }[]; caption?: string }) => (
-//   <div className="mt-8">
-//     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-//       {images.map((image, index) => (
-//           <div key={index} className="relative h-64">
-//           <Image
-//             src={urlForImage(image).quality(100).url()}
-//             alt={image.alt || 'Gallery Image'}
-//             width={100}
-//             height={100}
-//             className=''
-//           />
-//         </div>
-//         ))}
-//     </div>
-//     {caption && <p className="mt-4 text-center italic">{caption}</p>}
-//   </div>
-// );
-
-
 
 // The dynamic page component
 export default async function Page({ params }) {
@@ -112,69 +117,79 @@ export default async function Page({ params }) {
         </h3>
         <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-4"></div>
       </div>
-     {/* Grid Section */}
-<div className="mt-8 max-auto items-center justify-items-center">
-  <div className="grid grid-cols-4 gap-4 max-w-3xl mx-auto px-14">
-    {/* Left Column */}
-    <div className="mx-auto text-center col-span-1">
-      <div>
-        <Image
-          src={urlForImage(person.image).quality(100).url()}
-          alt={person.name}
-          width={100}
-          height={100}
-          className="rounded-full w-full"
-        />
-      </div>
-      <div>
-        <h1 className="text-2xl mt-2">{person.name}</h1>
-        <p className="text-[13px] text-gray-500 italic mt-2">{person.title}</p>
-        <p className="text-[13px] leading-4 text-gray-500 mt-1">{person.subtitle}</p>
+      {/* Grid Section */}
+      <div className="mt-8 max-auto items-center justify-items-center">
+        <div className="grid grid-cols-5 gap-4 max-w-3xl mx-auto px-14">
+          {/* Left Column */}
+          <div className="mx-auto text-center col-span-2">
+            <div className="w-full px-2 mx-auto">
+              <div className={bodoni.className}>
+                <div className="w-full flex justify-center">
+                  <Image
+                    src={urlForImage(person.image).quality(100).url()}
+                    alt={person.name}
+                    width={150}
+                    height={150}
+                    className="object-contain w-1/2 mx-auto"
+                  />
+                </div>
+                <p className="text-xl font-normal mt-2">{person.name}</p>
+                <div className={lato.className}>
+                  <p className="text-[14px] italic  text-gray-600 mt-1">
+                    {person.title}
+                  </p>
+                  <p className="text-xs my-2 text-gray-600">
+                    {person.subtitle}
+                  </p>
+                  <div className="flex items-center justify-center my-2 px-6">
+                    <div className="flex-grow border-t border-gray-400"></div>
+                    <span className="mx-2">
+                      <Image
+                        alt="linkedin in"
+                        src="/assets/in.png"
+                        width={12}
+                        height={12}
+                        className="pb-2"
+                      />
+                    </span>
+                    <div className="flex-grow border-t border-gray-400"></div>
+                  </div>
 
-        <div className="flex items-center justify-center my-2">
-          <div className="flex-grow border-t border-gray-400"></div>
-          <span className="mx-2">
-            <Image
-              alt="linkedin in"
-              src="/assets/in.png"
-              width={12}
-              height={12}
-              className="pb-2"
-            />
-          </span>
-          <div className="flex-grow border-t border-gray-400"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Right Column */}
+          <div className="col-span-3 max-w-full">
+            {/* Render description using PortableText */}
+            <div className="mt-2">
+              {person.description?.map((block, index) => (
+                <CustomPortableText key={block._key || index} value={[block]} />
+              ))}
+            </div>
+
+            <div className="mt-6 flex flex-row space-x-2">
+            {person.gallery.map((image, index) => (
+              <div key={index} className="image-container">
+                <Image
+                  src={urlForImage(image.asset).width(1800).height(375).url()}
+                  alt={image.caption || 'Gallery image'}
+                  width={400}
+                  height={100}
+                  // layout="responsive"
+                  className=''
+                />
+
+              </div>
+            ))}
+          </div>
+          </div>
+
+  
         </div>
-        <span className="border-b-2 border-gray-300 mt-4"></span>
       </div>
     </div>
-
-    {/* Right Column */}
-    <div className="col-span-3 max-w-full">
-      {/* Render description using PortableText */}
-      <div className="mt-2">
-        {person.description?.map((block, index) => (
-          <CustomPortableText key={block._key || index} value={[block]} />
-        ))}
-      </div>
-
-      {/* Render content blocks */}
-      {/* <div>
-        {person.content?.map((block, index) => {
-          if (block.images) {
-            return (
-              <ImageGallery
-                key={index}
-                images={block.images || []}
-                caption={block.caption}
-              />
-            );
-          }
-          return null; // Skip other blocks
-        })}
-      </div> */}
-    </div>
-  </div>
-</div>
-</div>
   );
 }
