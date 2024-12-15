@@ -136,7 +136,7 @@ function MeetTheTeam({ persons }) {
         className: "mt-32 text-center mx-auto max-w-[390px] md:max-w-[670px]  lg:max-w-[940px] xl:max-w-[1220px] px-4",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "text-3xl mb-4 md:text-4xl",
+                className: "text-3xl  mb-4 sm:text-4xl",
                 children: "Meet the Team"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
@@ -159,8 +159,8 @@ function MeetTheTeam({ persons }) {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/assets/arrow_left.png",
                             alt: "Previous Arrow",
-                            width: 24,
-                            height: 24
+                            width: 22,
+                            height: 22
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
                             lineNumber: 60,
@@ -200,12 +200,12 @@ function MeetTheTeam({ persons }) {
                                                             className: "object-contain mx-auto"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                                            lineNumber: 89,
+                                                            lineNumber: 90,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 89,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -213,7 +213,7 @@ function MeetTheTeam({ persons }) {
                                                         children: person.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                                        lineNumber: 97,
+                                                        lineNumber: 98,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -224,7 +224,7 @@ function MeetTheTeam({ persons }) {
                                                                 children: person.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                                                lineNumber: 99,
+                                                                lineNumber: 100,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -232,24 +232,24 @@ function MeetTheTeam({ persons }) {
                                                                 children: person.subtitle
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                                                lineNumber: 102,
+                                                                lineNumber: 103,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                                        lineNumber: 98,
+                                                        lineNumber: 99,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                                lineNumber: 87,
+                                                lineNumber: 88,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 87,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
@@ -278,16 +278,16 @@ function MeetTheTeam({ persons }) {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/assets/arrow_right.png",
                             alt: "Next Arrow",
-                            width: 24,
-                            height: 24
+                            width: 22,
+                            height: 22
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                            lineNumber: 119,
+                            lineNumber: 120,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/MeetTheTeamTwo.tsx",
-                        lineNumber: 115,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this)
                 ]

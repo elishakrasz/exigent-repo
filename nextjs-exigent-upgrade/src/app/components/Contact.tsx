@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="mt-28 text-center mx-auto justify-items-center max-w-7xl">
       <h3 className="text-3xl sm:text-4xl lg:text-5xl mb-4">Contact</h3>
       <div className="h-[3px] w-[60px] md:w-[80px] lg:w-[120px] bg-red-500 rounded mx-auto md:mb-12"></div>
-      <div className="mt-12 md:grid md:grid-cols-3 md:gap-10 lg:gap-24">
+      <div className="mt-12 md:grid md:grid-cols-3 md:gap-10 lg:gap-24 ml-10">
         {/* Locations */}
         <div className="text-left">
           <div>
@@ -29,14 +29,14 @@ const Contact = () => {
           <div>
             <p className="text-base">Israel 972-2-500-9450</p>
             <p className="mb-8 text-base">US 1-646-506-9450</p>
-            <h1 className="text-lg pb-2 md:text-base text-red-500 font-sans font-light">
+            <h1 className="text-lg pb-2 lg:text-[18px] md:text-base text-red-500 font-sans font-light">
               info@exigentcap.com
             </h1>
           </div>
         </div>
 
         {/* Social and Contact Icons */}
-        <div className="pb-24 flex space-x-1">
+        <div className="pb-24 flex space-x-1 w-36">
           <Link
             href="https://www.linkedin.com/company/exigentcapitalgroup/"
             className="mr-3 group relative"
@@ -47,7 +47,7 @@ const Contact = () => {
               alt="LinkedIn"
               width={112}
               height={28}
-              className="transition-opacity duration-100 group-hover:opacity-0 w-20 md:w-26"
+              className="transition-opacity duration-100 group-hover:opacity-0 w-24 md:w-26"
             />
             <Image
               src="/assets/RedLinkedIn.png"

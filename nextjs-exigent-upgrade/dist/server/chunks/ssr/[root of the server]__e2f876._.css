@@ -417,7 +417,7 @@
   position: fixed;
   top: 40vh;
   bottom: 0;
-  left: -12vw;
+  left: -24vw;
   right: 0%;
   z-index: 9999999;
   animation: 7.5s cubic-bezier(.5, 0, 0, 1) forwards backgroundanimation;
@@ -442,7 +442,7 @@
 
 .animation-wrap p {
   position: absolute;
-  left: 47.8vw;
+  left: 53.4vw;
   right: auto;
   text-transform: uppercase;
   color: #999;
@@ -454,7 +454,7 @@
 
 .animation-txtx img {
   width: 5vw;
-  left: 41.8vw;
+  left: 48vw;
   position: absolute;
   top: 1vw;
   right: auto;
@@ -585,80 +585,6 @@
   animation: 7.5s cubic-bezier(.5, 0, 0, 1) forwards animation-4;
 }
 
-@keyframes animation-4 {
-  0% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.animation-txt4 {
-  animation: 7.5s cubic-bezier(.5, 0, 0, 1) forwards animation-5;
-}
-
-@keyframes animation-5 {
-  0% {
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes animation-6 {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
 .animation-txtlogo {
   animation: 7.5s ease-in-out forwards animation-6;
   position: absolute;
@@ -677,43 +603,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 40vw;
-}
-
-@keyframes animation-8 {
-  0% {
-    opacity: 0;
-  }
-
-  60% {
-    opacity: 0;
-  }
-
-  70% {
-    opacity: 1;
-  }
-
-  75% {
-    opacity: 1;
-  }
-
-  85% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@media screen and (width <= 400px) {
-  .animation-txtx img {
-    width: 5.2vw;
-    left: 36.6vw;
-  }
-
-  .animation-wrap p {
-    left: 42.8vw;
-  }
 }
 
 .part {
@@ -937,6 +826,17 @@
   float: right;
   margin-left: 15px;
   clear: none;
+}
+
+@media screen and (width <= 400px) {
+  .animation-txtx img {
+    width: 5vw;
+    left: 47vw;
+  }
+
+  .animation-wrap p {
+    left: 52.6vw;
+  }
 }
 
 

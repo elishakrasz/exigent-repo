@@ -10,6 +10,9 @@ import BusinessSectionTwo from "./components/BusinessCardTwo";
 import MeetTheTeamTwo from "./components/MeetTheTeamTwo";
 import Animate from "./components/animation/Animate";
 
+import localFont from 'next/font/local'
+
+// const bodoniTrue = localFont({ src: '../../fonts/bodoni/bodoni-book-bt.ttf'})
 
 
 const PERSON_QUERY = `*[_type == "person" && order < 12] | order(order asc) | { _id,name,title, subtitle, description, image, slug, order }`;
@@ -25,20 +28,16 @@ export default async function Home() {
 
   return (
     <div>
-      {/* White Screen Animation */}
-      
       <Animate />
-    
-     
       {/* Leadership Section */}
-      <div className="mt-16 text-center mx-auto max-w-5xl">
-        {/* <div className="justify-items-center mx-auto max-w-3xl">
-          <h3 className="max-w-[320px] text-xl font-normal sm:max-w-[500px] sm:text-2xl  sm:px-8  md:text-xl md:max-w-xl lg:max-w-3xl lg:text-xl xl:text-[26px] text-gray-400">
+      <div className="mt-20 lg:mt-26 text-center mx-auto">
+        <div className="justify-items-center mx-auto">
+          <h3 className="max-w-[320px] sm:max-w-[520px] text-xl font-normal sm:text-2xl sm:px-8 md:text-2xl md:max-w-2xl lg:max-w-[840px] lg:text-3xl xl:text-4xl xl:max-w-[980px] text-gray-400">
             Exigent is a diversified financial services company with three
             distinct businesses.
           </h3>
           <div className="h-[3px] w-[120px] bg-red-500 rounded mx-auto mt-6"></div>
-        </div> */}
+        </div>
       </div>
       {/* <BusinessCard /> */}
       <BusinessSectionTwo />

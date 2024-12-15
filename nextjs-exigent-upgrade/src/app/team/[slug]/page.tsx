@@ -2,7 +2,6 @@ import React from 'react';
 import { PortableText, type SanityDocument } from 'next-sanity';
 import { client, urlForImage } from '../../sanity/client';
 import Image from 'next/image';
-import { Metadata } from 'next';
 import { Bodoni_Moda, Lato } from 'next/font/google';
 import Link from 'next/link';
 
@@ -186,8 +185,6 @@ export default async function Page({ params }) {
             ))}
           </div>
           </div>
-
-  
         </div>
       </div>
     </div>

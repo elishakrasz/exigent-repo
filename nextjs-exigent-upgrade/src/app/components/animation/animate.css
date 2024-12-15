@@ -160,7 +160,7 @@
     position: fixed;
     top: 40vh;
     bottom: 0;
-    left: -12vw;
+    left: -24vw;
     right: 0%;
     z-index: 9999999;
     animation: backgroundanimation 7.5s forwards cubic-bezier(0.5, 0, 0, 1);
@@ -185,7 +185,7 @@
   
   .animation-wrap p {
     position: absolute;
-    left: 47.8vw;
+    left: 53.4vw;
     right: auto;
     text-transform: uppercase;
     color: #999999;
@@ -198,7 +198,7 @@
   
   .animation-txtx img {
     width: 5vw;
-    left: 41.8vw;
+    left: 48.0vw;
     position: absolute;
     top: 1vw;
     right: auto;
@@ -334,7 +334,7 @@
     animation: animation-4 7.5s forwards cubic-bezier(0.5, 0, 0, 1);
   }
   
-  @keyframes animation-4 {
+  /* @keyframes animation-4 {
     0% {
       opacity: 0;
     }
@@ -355,12 +355,12 @@
       opacity: 0;
     }
   }
-  
-  .animation-txt4 {
+   */
+  /* .animation-txt4 {
     animation: animation-5 7.5s forwards cubic-bezier(0.5, 0, 0, 1);
-  }
+  } */
   
-  @keyframes animation-5 {
+  /* @keyframes animation-5 {
     0% {
       opacity: 0;
     }
@@ -380,13 +380,13 @@
     100% {
       opacity: 0;
     }
-  }
+  } */
   
   /* .animation-txt5 {
     animation: animation-6 7.5s forwards cubic-bezier(0.5, 0, 0, 1);
   } */
   
-  @keyframes animation-6 {
+  /* @keyframes animation-6 {
     0% {
       opacity: 0;
     }
@@ -410,7 +410,7 @@
     100% {
       opacity: 0;
     }
-  }
+  } */
   
   .animation-txtlogo {
     animation: animation-6 7.5s forwards ease-in-out;
@@ -432,7 +432,7 @@
     width: 40vw;
   }
   
-  @keyframes animation-8 {
+  /* @keyframes animation-8 {
     0% {
       opacity: 0;
     }
@@ -456,18 +456,18 @@
     100% {
       opacity: 0;
     }
-  }
+  } */
   
-  @media screen and (max-width: 400px) {
+  /* @media screen and (max-width: 400px) {
     .animation-txtx img {
       width: 5.2vw;
-      left: 36.6vw;
+      left: 36.2vw;
     }
   
     .animation-wrap p {
       left: 42.8vw;
     }
-  }
+  } */
   
   .part {
     display: block;
@@ -687,3 +687,14 @@
     clear: none;
   }
   
+  
+@media screen and (max-width: 400px) {
+    .animation-txtx img {
+      width: 5vw;
+      left: 47.0vw;
+    }
+  
+    .animation-wrap p {
+      left: 52.6vw;
+    }
+  }

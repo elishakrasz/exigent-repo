@@ -66,7 +66,7 @@ export default async function Contact() {
               <p className="text-base">Israel 972-2-500-9450</p>
               <p className="md:mb-8 text-base">US 1-646-506-9450</p>
             </div>
-            <h1 className="text-base text-red-500 font-sans font-light md:text-left md:ml-10">
+            <h1 className="mt-1 text-[17px] text-red-500 font-sans font-light md:text-left md:ml-10">
               info@exigentcap.com
             </h1>
           </div>

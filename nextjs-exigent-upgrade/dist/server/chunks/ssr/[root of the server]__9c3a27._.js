@@ -81,7 +81,7 @@ const Family = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl mt-10",
+                className: "max-w-7xl lg:max-w-[1000px] lg:mx-auto mt-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -90,13 +90,13 @@ const Family = ()=>{
                             className: "md:grid md:grid-cols-6 mt-8",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "md:col-span-4",
+                                    className: "md:col-span-4 lg:max-w-[850px] md:mt-12",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "md:text-5xl md:text-center font-semibold leading-10",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-3xl sm:text-4xl md:font-normal md:text-5xl",
+                                                    className: "text-center text-3xl sm:text-4xl md:font-normal md:text-5xl",
                                                     children: "Family Office"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/family/page.tsx",
@@ -104,7 +104,7 @@ const Family = ()=>{
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-base md:text-base font-light mt-2 text-gray-500 leading-relaxed",
+                                                    className: "text-center text-base md:text-base font-light mt-2 text-gray-500 leading-relaxed",
                                                     children: "For high-net-worth families"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/family/page.tsx",
@@ -150,7 +150,7 @@ const Family = ()=>{
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mt-8 px-12 md:ml-[20%] md:max-w-[820px]",
+                                            className: "mt-8 px-6 sm:px-12 sm:max-w-[480px] mx-auto md:ml-8 md:max-w-[820px] lg:max-w-[1020px]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-sm md:text-sm font-light text-gray-500 leading-relaxed",
@@ -172,7 +172,7 @@ const Family = ()=>{
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "mt-6 text-sm text-gray-500",
+                                                    className: "mt-2 text-sm text-gray-500",
                                                     children: "We provide a range of services that include:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/family/page.tsx",
@@ -194,7 +194,7 @@ const Family = ()=>{
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "hidden md:block md:col-span-2",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "md:w-full mx-auto",
+                                        className: "md:w-[350px] mx-auto",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             src: "/assets/Birds.png",
                                             alt: "Map",
@@ -238,7 +238,7 @@ const Family = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mx-auto  md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:align-top md:gap-0 px-2 md:px-0 lg:max-w-5xl lg:px-8 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900",
+                className: "mx-auto md:pl-16 md:grid md:grid-cols-6 md:max-w-6xl mt-8 md:mt-4 text-center md:align-top md:gap-0 px-2 md:px-0 lg:max-w-[1060px] lg:px-20 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900",
                 children: [
                     "Investment and Wealth Management",
                     "Comprehensive Reporting",
@@ -247,12 +247,20 @@ const Family = ()=>{
                     "Family Governance and Succession Planning",
                     "Networking and Unique Events"
                 ].map((service, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$lato_2554b613$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} flex flex-col justify-center items-center my-4 h-6`,
+                        className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$lato_2554b613$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className} flex flex-col items-center align-items-center my-8 md:my-4 h-8`,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "font-sans text-sm md:text-xs px-2 md:align-top",
+                            className: "font-sans text-sm md:text-xs px-2 md:align-text-bottom",
                             children: [
                                 " ",
-                                service
+                                service,
+                                " ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: `border-b-2 mx-auto mt-6 border-slate-700 w-16 md:border-b-0 ${index === 5 ? "border-b-0 md:border-b-0" : ""} `
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/family/page.tsx",
+                                    lineNumber: 100,
+                                    columnNumber: 89
+                                }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/family/page.tsx",
@@ -305,16 +313,16 @@ const Family = ()=>{
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "max-w-[350px] h-[350px] mx-auto",
+                            className: "max-w-[550px] h-[350px]  mx-auto",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$bodoni_moda_18bdd718$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/assets/team/Hoenlein.png",
                                         alt: "Hon. Malcolm Hoenlein",
-                                        width: 210,
-                                        height: 140,
-                                        className: "mt-10 object-contain"
+                                        width: 250,
+                                        height: 250,
+                                        className: "mt-10 object-contain lg:max-w-[400px]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/family/page.tsx",
                                         lineNumber: 122,
@@ -367,7 +375,7 @@ const Family = ()=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$lato_2554b613$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].className,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "py-32 italic font-light font-sans text-gray-400 text-sm",
+                                className: "py-32 italic font-light font-sans text-gray-400 text-xs sm:text-sm",
                                 children: "Services provided by Exigent Family Office Ltd. (Israel) in conjunction with professional third parties."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/family/page.tsx",

@@ -17,17 +17,17 @@ const Family = () => {
   return (
     <div>
       {/* Main Section */}
-      <div className="max-w-7xl mt-10">
+      <div className="max-w-7xl lg:max-w-[1000px] lg:mx-auto mt-10">
         <div className="">
           {/* Text Section */}
           <div className="">
             <div className="md:grid md:grid-cols-6 mt-8">
-              <div className="md:col-span-4">
+              <div className="md:col-span-4 lg:max-w-[850px] md:mt-12">
                 <div className="md:text-5xl md:text-center font-semibold leading-10">
-                  <h3 className="text-3xl sm:text-4xl md:font-normal md:text-5xl">
+                  <h3 className="text-center text-3xl sm:text-4xl md:font-normal md:text-5xl">
                     Family Office
                   </h3>
-                  <p className="text-base md:text-base font-light mt-2 text-gray-500 leading-relaxed">
+                  <p className="text-center text-base md:text-base font-light mt-2 text-gray-500 leading-relaxed">
                     For high-net-worth families
                   </p>
                   <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
@@ -46,7 +46,7 @@ const Family = () => {
                   />
                 </div>
               </div>
-                <div className="mt-8 px-12 md:ml-[20%] md:max-w-[820px]">
+                <div className="mt-8 px-6 sm:px-12 sm:max-w-[480px] mx-auto md:ml-8 md:max-w-[820px] lg:max-w-[1020px]">
                 <p className="text-sm md:text-sm font-light text-gray-500 leading-relaxed">
                   <span className="font-semibold text-gray-600">
                     Exigent Family Office
@@ -54,7 +54,7 @@ const Family = () => {
                   is purpose-built for families who are seeking to create a
                   stronger alignment between their capital and their values.
                 </p>
-                <p className="mt-6 text-sm text-gray-500">
+                <p className="mt-2 text-sm text-gray-500">
                   We provide a range of services that include:
                 </p>
               </div>
@@ -63,7 +63,7 @@ const Family = () => {
               
               {/* Image Section */}
               <div className="hidden md:block md:col-span-2" >
-                <div className="md:w-full mx-auto">
+                <div className="md:w-[350px] mx-auto">
                   <Image
                     src="/assets/Birds.png"
                     alt="Map"
@@ -84,7 +84,7 @@ const Family = () => {
       </div>
 
 {/* Services Grid */}
-<div className="mx-auto  md:pl-24 md:grid md:grid-cols-6 md:max-w-6xl mt-8 text-center md:align-top md:gap-0 px-2 md:px-0 lg:max-w-5xl lg:px-8 lg:ml-20 divide-y-0 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
+<div className="mx-auto md:pl-16 md:grid md:grid-cols-6 md:max-w-6xl mt-8 md:mt-4 text-center md:align-top md:gap-0 px-2 md:px-0 lg:max-w-[1060px] lg:px-20 md:divide-y-0 md:divide-x-2 divide-slate-600 text-gray-900">
   {[
     "Investment and Wealth Management",
     "Comprehensive Reporting",
@@ -95,9 +95,9 @@ const Family = () => {
   ].map((service, index) => (
     <div
       key={index}
-      className={`${lato.className} flex flex-col justify-center items-center my-4 h-6`}
+      className={`${lato.className} flex flex-col items-center align-items-center my-8 md:my-4 h-8`}
     >
-      <h1 className="font-sans text-sm md:text-xs px-2 md:align-top"> {service}</h1>
+      <h1 className="font-sans text-sm md:text-xs px-2 md:align-text-bottom"> {service} <p className={`border-b-2 mx-auto mt-6 border-slate-700 w-16 md:border-b-0 ${index === 5 ? "border-b-0 md:border-b-0" : ""} `}></p></h1>
     </div>
   ))}
 </div>
@@ -117,14 +117,14 @@ const Family = () => {
           <div className="border-b-4 border-red-500 rounded-full w-24 mt-4 mx-auto"></div>
 
           {/* Team Member */}
-          <div className="max-w-[350px] h-[350px] mx-auto">
+          <div className="max-w-[550px] h-[350px]  mx-auto">
             <div className={bodoni.className}>
               <Image
                 src="/assets/team/Hoenlein.png"
                 alt="Hon. Malcolm Hoenlein"
-                width={210}
-                height={140}
-                className="mt-10 object-contain"
+                width={250}
+                height={250}
+                className="mt-10 object-contain lg:max-w-[400px]"
               />
               <p className="text-[28px] mb:text-3xl font-semibold">
                 Hon. Malcolm Hoenlein
@@ -142,7 +142,7 @@ const Family = () => {
 
           {/* Disclaimer */}
           <div className={lato.className}>
-            <h1 className="py-32 italic font-light font-sans text-gray-400 text-sm">
+            <h1 className="py-32 italic font-light font-sans text-gray-400 text-xs sm:text-sm">
               Services provided by Exigent Family Office Ltd. (Israel) in
               conjunction with professional third parties.
             </h1>

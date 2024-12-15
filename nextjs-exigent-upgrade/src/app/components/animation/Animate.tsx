@@ -15,7 +15,7 @@ const Animate = () => {
           {/* Animation Container with Scaling */}
           <div className="animation-container">
             <div className="animation-wrap">
-              <div className={`${bodoniTrue.className} animation-txtx w-3/4`}>
+              <div className={`${bodoniTrue.className} animation-txtx`}>
                 <img src="/assets/logo-x.svg" />
               </div>
               <div className="animation-e">
@@ -30,32 +30,32 @@ const Animate = () => {
               <div className="animation-txt3">
                 <p>ceptional Opportunities</p>
               </div>
-              <div className="animation-txt4">
+              {/* <div className="animation-txt4">
                 <p>citing</p>
-              </div>
+              </div> */}
               <div className="animation-txtlogo w-[50%]">
                 <img src="/assets/logo-ani.svg" />
               </div>
             </div>
           </div>
 
-          <div className="mx-auto text-center max-w-[620px]">
+          <div className="mx-auto text-center max-w-[920px]">
             <div className="">
               <img
                 src="/assets/santamaria-20190328-arielko-2-p-500.jpeg"
                 className="hidden lg:w-1/2"
               />
             </div>
-            <div className="mt-20 lg:mt-20 ">
+            {/* <div className="mt-20 lg:mt-10">
               <h1
-                className={`${bodoniTrue.className} px-4 text-gray-500 font-light text-2xl`}
+                className={`${bodoniTrue.className}  text-gray-700 font-light text-4xl`}
               >
                 Exigent is a diversified financial services company with three
                 distinct businesses.
               </h1>
               <div className=""></div>
               <div className="h-[3px] w-[100px] bg-red-500 rounded mx-auto mt-6"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

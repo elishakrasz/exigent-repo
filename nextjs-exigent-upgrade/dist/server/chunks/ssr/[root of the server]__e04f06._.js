@@ -305,7 +305,7 @@ const CustomPortableText = ({ value })=>{
             block: {
                 // Custom rendering for "normal" blocks
                 normal: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm text-gray-800 my-2",
+                        className: "text-[12px] md:text-xs text-gray-600 py-2",
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Test.tsx",
@@ -320,7 +320,7 @@ const CustomPortableText = ({ value })=>{
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Test.tsx",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 13
                     }, void 0),
                 // Custom rendering for "em" (italic) text
@@ -329,16 +329,16 @@ const CustomPortableText = ({ value })=>{
                         children: children
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Test.tsx",
-                        lineNumber: 37,
+                        lineNumber: 38,
                         columnNumber: 13
                     }, void 0)
             },
             listItem: ({ children })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                    className: "text-xs text-gray-600 py-1",
+                    className: "text-[12px] md:text-xs text-gray-600 py-1",
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Test.tsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 11
                 }, void 0)
         }
@@ -349,14 +349,13 @@ const CustomPortableText = ({ value })=>{
     }, this);
 };
 const Test = ({ person })=>{
-    console.log('p', person);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "mt-8 max-auto items-center justify-items-center",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid grid-cols-1 md:grid-cols-5 max-w-3xl mx-auto px-14",
+            className: "grid grid-cols-1 md:gap-1 md:grid-cols-4 mx-auto px-14",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mx-auto text-center col-span-2",
+                    className: "mx-auto text-center col-span-1 ",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-full mx-auto",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -369,7 +368,7 @@ const Test = ({ person })=>{
                                         alt: person.name,
                                         width: 150,
                                         height: 150,
-                                        className: "object-contain w-3/5 mx-auto"
+                                        className: "object-contain w-3/4 mx-auto"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Test.tsx",
                                         lineNumber: 58,
@@ -381,7 +380,7 @@ const Test = ({ person })=>{
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xl font-normal mt-2",
+                                    className: "text-xl font-normal mt-1",
                                     children: person.name
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Test.tsx",
@@ -392,7 +391,7 @@ const Test = ({ person })=>{
                                     className: __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$lato_4c3925ae$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].className,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[14px] italic  text-gray-600 mt-2",
+                                            className: "text-[12px] italic  text-gray-600 mt-2",
                                             children: person.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Test.tsx",
@@ -400,7 +399,7 @@ const Test = ({ person })=>{
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-[14px] my-2 text-gray-600",
+                                            className: "text-[12px] text-gray-600",
                                             children: person.subtitle
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/Test.tsx",
@@ -474,7 +473,7 @@ const Test = ({ person })=>{
                     className: "col-span-3 max-w-full text-left ",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-2 min-h-52",
+                            className: " mt-2 h-full md:h-60 md:w-[450px] overflow-auto",
                             children: person.description?.map((block, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomPortableText, {
                                     value: [
                                         block
@@ -490,16 +489,16 @@ const Test = ({ person })=>{
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-6 flex flex-row space-x-2",
+                            className: "mt-6 flex flex-row space-x-8 max-w-[450px]",
                             children: person.gallery.map((image, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "image-container",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        src: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$sanity$2f$client$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["urlForImage"])(image.asset).width(1800).height(375).url(),
+                                        src: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$sanity$2f$client$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["urlForImage"])(image.asset).url(),
                                         alt: image.caption || 'Gallery image',
                                         width: 400,
-                                        height: 100,
-                                        // layout="responsive"
-                                        className: ""
+                                        height: 250,
+                                        layout: "responsive",
+                                        className: "object-fill max-h-6 w-14"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Test.tsx",
                                         lineNumber: 106,
@@ -599,32 +598,33 @@ function PersonGalleryTwo({ persons }) {
         setCurrentIndex((prev)=>prev === persons.length - 1 ? 0 : prev + 1);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "mt-8 mx-auto max-w-[460px] md:max-w-[780px] lg:max-w-[940px] xl:max-w-[1220px]",
+        className: "mt-8 mx-auto items-center",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative px-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "absolute left-[16px] md:left-[86px] lg:left-[132px] top-1/2 transform -translate-y-1/2 z-20",
+                    className: "absolute left-[58px] md:left-[86px] lg:left-[132px] top-[40vw]  sm:top-[35vw] md:top-1/2 transform -translate-y-1/2 z-20",
                     onClick: handlePrev,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: "/assets/arrow_left.png",
                         alt: "Previous Arrow",
-                        width: 24,
-                        height: 24
+                        width: 20,
+                        height: 20
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                        lineNumber: 77,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                    lineNumber: 73,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "overflow-hidden",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex transition-transform duration-500 gap-1",
+                        className: "flex gap-1",
+                        // className="flex transition-transform duration-500 gap-1"
                         style: {
                             transform: `translateX(-${currentIndex * (100 / 1)}%)`
                         },
@@ -637,46 +637,46 @@ function PersonGalleryTwo({ persons }) {
                                     person: person
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 102,
                                     columnNumber: 17
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                                lineNumber: 93,
+                                lineNumber: 95,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                        lineNumber: 86,
+                        lineNumber: 87,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                    lineNumber: 85,
+                    lineNumber: 86,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "absolute right-[0px] md:right-[36px] lg:right-[92px] xl:right-[-10px] top-1/2 transform -translate-y-1/2 text-black z-10 p-2",
+                    className: "absolute right-[44px] md:right-[36px] lg:right-[92px] xl:right-[-10px] top-[40vw] md:top-1/2 transform -translate-y-1/2 text-black z-10 p-2",
                     onClick: handleNext,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: "/assets/arrow_right.png",
                         alt: "Next Arrow",
-                        width: 24,
-                        height: 24
+                        width: 20,
+                        height: 20
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                        lineNumber: 110,
+                        lineNumber: 112,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-                    lineNumber: 106,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/PersonGalleryTwo.tsx",
-            lineNumber: 72,
+            lineNumber: 73,
             columnNumber: 7
         }, this)
     }, void 0, false, {

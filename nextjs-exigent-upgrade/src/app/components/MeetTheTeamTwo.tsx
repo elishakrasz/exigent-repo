@@ -49,7 +49,7 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
 
   return (
     <div className="mt-32 text-center mx-auto max-w-[390px] md:max-w-[670px]  lg:max-w-[940px] xl:max-w-[1220px] px-4">
-      <h3 className="text-3xl mb-4 md:text-4xl">Meet the Team</h3>
+      <h3 className="text-3xl  mb-4 sm:text-4xl">Meet the Team</h3>
       <div className="redline mb-8 h-[3px] w-[120px] bg-red-500 rounded mx-auto"></div>
       <div className="relative px-6">
         {/* Button: Previous */}
@@ -60,8 +60,8 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
           <Image
             src="/assets/arrow_left.png"
             alt="Previous Arrow"
-            width={24}
-            height={24}
+            width={22}
+            height={22}
           />
         </button>
 
@@ -82,7 +82,8 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
                 }}
               >
                 {/* <Link href={`team/${person.slug.current}`}> */}
-                <Link href={`/team?slug=${person.slug.current}`}>
+                <Link href={`/team?slug=${person.slug.current}` }>
+              
                   <div className="border border-gray-300 h-[350px] w-[275px] px-2 mx-auto hover:border-l-4 hover:border-l-[#F5101E]">
                     <div className={bodoni.className}>
                       <div className="mt-10 w-full flex justify-center">
@@ -119,8 +120,8 @@ export default function MeetTheTeam({ persons }: { persons: any[] }) {
           <Image
             src="/assets/arrow_right.png"
             alt="Next Arrow"
-            width={24}
-            height={24}
+            width={22}
+            height={22}
           />
         </button>
       </div>
