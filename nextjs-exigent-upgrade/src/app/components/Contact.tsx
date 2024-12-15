@@ -4,7 +4,7 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <div className="mt-28 text-center mx-auto justify-items-center max-w-7xl">
-      <h3 className="text-3xl sm:text-4xl lg:text-5xl mb-4">Contact</h3>
+      <h3 className="text-3xl sm:text-4xl md:text-5xl mb-4">Contact</h3>
       <div className="h-[3px] w-[60px] md:w-[80px] lg:w-[120px] bg-red-500 rounded mx-auto md:mb-12"></div>
       <div className="mt-12 md:grid md:grid-cols-3 md:gap-10 lg:gap-24 ml-10">
         {/* Locations */}

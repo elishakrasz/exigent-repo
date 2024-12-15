@@ -53,7 +53,7 @@ const Card = ({ person }) => {
                 {/* Left Column */}
                 <div className="mx-auto">
                     <div className="">
-                        <div className={`${bodoni.className} w-48`}>
+                        <div className={`${bodoni.className} w-48 mx-auto items-center`}>
                             <div className="">
                                 <Image
                                     src={urlForImage(person.image).quality(100).url()}
@@ -112,7 +112,7 @@ const Card = ({ person }) => {
                                     width={400}
                                     height={250}
                                     layout="responsive"
-                                    className='object-fill max-h-6 w-14'
+                                    className='object-fill max-h-7 w-14'
                                 />
 
                             </div>

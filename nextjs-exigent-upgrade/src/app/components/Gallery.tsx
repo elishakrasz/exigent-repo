@@ -1,26 +1,14 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
-import { urlForImage } from '../sanity/client';
-import { Bodoni_Moda, Lato } from 'next/font/google';
-import Link from 'next/link';
 import Card from './Card';
 
-const bodoni = Bodoni_Moda({
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-const lato = Lato({
-  weight: ['300', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-});
-
-export default function Absolute({ persons }: { persons: any[] }) {
+export default function Gallery({ persons }: { persons: any[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
- 
+  const searchParams = useSearchParams();
+  const slugTwo = searchParams.get('slug'); // Retrieve slug from query parameters
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? persons.length - 1 : prev - 1));
@@ -30,8 +18,22 @@ export default function Absolute({ persons }: { persons: any[] }) {
     setCurrentIndex((prev) => (prev === persons.length - 1 ? 0 : prev + 1));
   };
 
+  useEffect(() => {
+    if (slugTwo && persons.length > 0) {
+      // Find the index of the team member based on the slug
+      const index = persons.findIndex((person) => person.slug.current === slugTwo);
+      if (index !== -1) {
+        setCurrentIndex(index);
+      } else {
+        console.warn(`Slug not found in persons: "${slugTwo}"`);
+      }
+    } else {
+      console.warn('Slug or persons not available', { slugTwo, persons });
+    }
+  }, [slugTwo, persons]);
+
   return (
-    <div className="mt-16 text-center mx-auto max-w-[390px] md:max-w-[670px]  lg:max-w-[940px] xl:max-w-[1220px] px-4">
+    <div className="mt-16 text-center mx-auto max-w-[390px] md:max-w-[670px] lg:max-w-[940px] xl:max-w-[1220px] px-4">
       <div className="relative px-6">
         {/* Button: Previous */}
         <button
@@ -59,12 +61,10 @@ export default function Absolute({ persons }: { persons: any[] }) {
                 key={index}
                 className="flex-none px-0.5"
                 style={{
-                    width: '100%',
-                  }}
+                  width: '100%',
+                }}
               >
-                {/* <Link href={`team/${person.slug.current}`}> */}
-                <Card person={person}/>
-            
+                <Card person={person} />
               </div>
             ))}
           </div>
@@ -72,7 +72,7 @@ export default function Absolute({ persons }: { persons: any[] }) {
 
         {/* Button: Next */}
         <button
-          className="absolute right-[10px] md:right-[-4px] lg:right-[36px] xl:right-[206px] top-[18%] md:top-[40%] transform -translate-y-1/2 text-black z-10 p-2"
+          className="absolute right-[10px] md:right-[-4px] lg:right-[36px] xl:right-[156px] top-[18%] md:top-[40%] transform -translate-y-1/2 text-black z-10 p-2"
           onClick={handleNext}
         >
           <Image
@@ -86,4 +86,3 @@ export default function Absolute({ persons }: { persons: any[] }) {
     </div>
   );
 }
-

@@ -3,10 +3,8 @@ import { urlForImage } from '../sanity/client';
 import { Bodoni_Moda, Lato } from 'next/font/google';
 import { type SanityDocument } from 'next-sanity';
 import { client } from '../sanity/client';
-import PersonGalleryTwo from '../components/PersonGalleryTwo';
 import Link from 'next/link';
-import PersonGallery from '../components/PersonGallery';
-import Absolute from '../components/Absolute';
+import Absolute from '../components/Gallery';
 
 const bodoni = Bodoni_Moda({
   subsets: ['latin'],
